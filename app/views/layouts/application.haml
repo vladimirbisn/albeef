@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %title Albeef
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .container
+      .header
+        .thin_red_line
+          -#.left
+          .middle
+          -#.right
+        .main_header
+          .left
+          .middle
+            .inside_block
+              %a.logo{:href => "/"}
+                %img{:src => "assets/layout/logo.png"}
+              %ul.menu
+                %li
+                  %a{:href => "#"} О КОМПАНИИ
+                %li.active
+                  %a{:href => "#"} ПРОДУКЦИЯ
+                %li
+                  %a{:href => "#"} НОВОСТИ
+                %li
+                  %a{:href => "#"} ВАКАНСИИ
+                %li.last
+                  %a{:href => "#"} КОНТАКТЫ
+              %img.slider{:src => "assets/layout/bulls.png"}
+          .right
+      .main
+        = yield
+      .footer
+        .left
+        .middle
+        .right

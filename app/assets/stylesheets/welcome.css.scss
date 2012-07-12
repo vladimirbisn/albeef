@@ -1,0 +1,123 @@
+@import "compass";
+@import "compass/reset";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.container {
+  clear: both;
+/*  width:1160px;
+  margin: 0 auto; */
+
+}
+.header {
+  margin-top:-11px;
+}
+
+.main_header {
+  margin-top:-11px;
+  clear:both;
+  .left {
+    min-width:152px;
+    background: #f6e6b4; /* Old browsers */
+    background: -moz-linear-gradient(left, #f9f8f7 0%, #d1ccc7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFFF), color-stop(100%,#d1ccc7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #f9f8f7 0%,#d1ccc7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #f9f8f7 0%,#d1ccc7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #f9f8f7 0%,#d1ccc7 100%); /* IE10+ */
+    background: linear-gradient(to right, #f9f8f7 0%,#d1ccc7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f8f7', endColorstr='#d1ccc7',GradientType=1 ); /* IE6-8 */
+    margin-top:-7px;
+    height:554px;
+  }
+  .middle {
+    width:896px;
+    height:654px;
+    .inside_block {
+      width:863px;
+      margin: 0 auto;
+        height: 653px;
+      .logo {
+        float:left;
+        margin-left: -4px;
+        img {
+          width:195px;
+          height: 65px;
+        }
+      }
+      ul.menu {
+        float:left;
+        margin-left:25px;
+        li {
+          float:left;
+          padding: 28px 14px 2px;
+          a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #444443;
+          }
+        }
+        li.active, li:hover {
+          a {
+            color: #c5161e;
+            border-bottom: 5px solid #c5161e;
+          }
+        }
+
+        li.last {
+          padding-right: 0;
+
+        }
+      }
+      .slider {
+        /* background: url("/assets/layout/bulls.png") no-repeat scroll left top transparent; */
+        width:862px;
+        height:480px;
+        clear: both;
+      }
+    }
+  }
+  .right {
+    min-width:152px;
+    background: #ed9017; /* Old browsers */
+    background: -moz-linear-gradient(left,  #d1ccc7 0%, #f9f8f7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d1ccc7), color-stop(100%,#f9f8f7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #d1ccc7 0%,#f9f8f7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #d1ccc7 0%,#f9f8f7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #d1ccc7 0%,#f9f8f7 100%); /* IE10+ */
+    background: linear-gradient(to right,  #d1ccc7 0%,#f9f8f7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ccc7', endColorstr='#f9f8f7',GradientType=1 ); /* IE6-8 */
+    margin-top:-7px;
+    height:554px;
+  }
+  & > div {
+    float:left;
+  }
+}
+
+.thin_red_line {
+  position: relative;
+  z-index: 10;
+  clear:both;
+  & > div {
+    width:11px;
+    height: 31px;
+    float:left;
+  }
+  .left {
+    background: url("/assets/layout/header_left.png") no-repeat scroll left top transparent;
+  }
+  .middle {
+    background: url("/assets/layout/header_middle.png") repeat-x scroll left top transparent;
+   /* width:1138px; */
+    width:100%
+  }
+  .right {
+    background: url("/assets/layout/header_right.png") no-repeat scroll right top transparent;
+    width:10px;
+  }
+}
+.main {
+  clear:both;
+}

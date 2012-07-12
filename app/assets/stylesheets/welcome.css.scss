@@ -56,7 +56,7 @@ body {
             font-family: Verdana, Arial, sans-serif;
           }
         }
-        li.active{
+        li.active {
           a {
             color: #c5161e;
             border-bottom: 3px solid #c5161e;
@@ -64,10 +64,11 @@ body {
           }
         }
         li:hover {
-          a {
-            border-bottom: 3px solid #c5161e;
-            padding-bottom:11px;
-        }
+                  a {
+                    border-bottom: 3px solid #c5161e;
+                    padding-bottom:11px;
+                  }
+                }
 
         li.last {
           padding-right: 0;

@@ -1,21 +1,21 @@
 !!!
-%html
+%html{:lang => "ru"}
   %head
     %title Albeef
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+
   %body
     .container
+      .thin_red_line
+        .left
+        .middle
+        .right
       .header
-        .thin_red_line
-          -#.left
-          .middle
-          -#.right
         .main_header
-          .left
-          .middle
-            .inside_block
+          .inside_block
+            .top_part
               %a.logo{:href => "/"}
                 %img{:src => "assets/layout/logo.png"}
               %ul.menu
@@ -29,11 +29,24 @@
                   %a{:href => "#"} ВАКАНСИИ
                 %li.last
                   %a{:href => "#"} КОНТАКТЫ
-              %img.slider{:src => "assets/layout/bulls.png"}
-          .right
+            %img.slider{:src => "assets/layout/bulls.png", :style => "border: 1px solid black;"}
       .main
         = yield
       .footer
         .left
         .middle
+          .copyrights
+            %ul
+              %li
+                %a{:href => "javascript:void(0)"} О Компании
+              %li
+                %a{:href => "javascript:void(0)"} Продукция
+              %li
+                %a{:href => "javascript:void(0)"} Новости
+              %li
+                %a{:href => "javascript:void(0)"} Вакансии
+              %li.last
+                %a{:href => "javascript:void(0)"} Контакты
+            %p &copy; 2012 ООО «АЛБИФ». Все права защищены.
+          .footer_logo
         .right

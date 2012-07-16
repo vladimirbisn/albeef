@@ -11,7 +11,7 @@
       .thin_red_line
         .middle
       .header
-        .main_header.welcome
+        .main_header
           .inside_block
             .top_part
               %a.logo{:href => "/"}
@@ -27,14 +27,6 @@
                     %li.last{:class =>  ("active" if controller.controller_name == value[:link])}
                       %a{:href => "/#{value[:link]}" }
                         = value[:name]
-            .slider
-              .sliderContent
-                .item
-                  %img.slider{:src => "assets/layout/slider/bulls.png"}
-                .item
-                  %img.slider{:src => "assets/layout/slider/corn.png"}
-                .item
-                  %img.slider{:src => "assets/layout/slider/plant.png"}
       .main
         = yield
       .footer

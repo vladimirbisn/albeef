@@ -17,23 +17,30 @@ body {
  .slider {
    margin:0 auto;
  }
-
+.welcome {
+  height:503px;
+  .inside_block {
+    height: 503px;
+  }
+  .left {
+    height:554px;
+  }
+}
 .main_header {
   margin-top:-11px;
   clear:both;
   width:896px;
-  height:503px;
+
   .left {
     min-width:152px;
     background: url("/assets/layout/wood_right.png") no-repeat scroll 0 0 transparent;
     margin-top:-7px;
-    height:554px;
   }
 
     .inside_block {
       width:863px;
       margin: 0 auto;
-        height: 503px;
+
       .top_part {
         height: 62px;
         margin-top: 2px;
@@ -347,4 +354,11 @@ body {
   .right {
     background: url("/assets/layout/footer_right.png") no-repeat scroll right top transparent;
   }
+}
+
+h1.temr_unalail {
+  font-size: 23px;
+  padding: 50px 0;
+  width:100%;
+  text-align: center;
 }

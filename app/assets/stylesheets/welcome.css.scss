@@ -143,6 +143,7 @@ body {
           background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
           background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+          behavior: url(assets/modules/PIE.htc);
           p {
             color: #3A060A;
             font-size: 15px;
@@ -170,6 +171,7 @@ body {
           background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
           background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+          behavior: url(assets/modules/PIE.htc);
           h1 {
             font-size: 24px;
             color: #212121;
@@ -207,6 +209,7 @@ body {
       background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
       background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+      behavior: url(assets/modules/PIE.htc);
       .border_news {
         width:865px;
         border-bottom: 5px #ff1d28 solid;

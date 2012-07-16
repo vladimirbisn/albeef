@@ -9,9 +9,9 @@
   %body
     .container
       .thin_red_line
-        .left
+        -#.left
         .middle
-        .right
+        -#.right
       .header
         .main_header
           .inside_block
@@ -40,20 +40,21 @@
       .main
         = yield
       .footer
-        .left
+        -#.left
         .middle
-          .copyrights
-            %ul
-              %li
-                %a{:href => "javascript:void(0)"} О Компании
-              %li
-                %a{:href => "javascript:void(0)"} Продукция
-              %li
-                %a{:href => "javascript:void(0)"} Новости
-              %li
-                %a{:href => "javascript:void(0)"} Вакансии
-              %li.last
-                %a{:href => "javascript:void(0)"} Контакты
-            %p &copy; 2012 ООО «АЛБИФ». Все права защищены.
-          .footer_logo
-        .right
+          .middle_wrap
+            .copyrights
+              %ul
+                %li
+                  %a{:href => "javascript:void(0)"} О Компании
+                %li
+                  %a{:href => "javascript:void(0)"} Продукция
+                %li
+                  %a{:href => "javascript:void(0)"} Новости
+                %li
+                  %a{:href => "javascript:void(0)"} Вакансии
+                %li.last
+                  %a{:href => "javascript:void(0)"} Контакты
+              %p &copy; 2012 ООО «АЛБИФ». Все права защищены.
+            .footer_logo
+        -#.right

@@ -279,8 +279,9 @@ body {
     float:left;
   }
   .middle_wrap {
-    width:874px;
+    width:865px;
     margin: 0 auto;
+    height: 144px;
   }
   .left {
     background: url("/assets/layout/footer_left.png") no-repeat scroll left top transparent;
@@ -291,7 +292,7 @@ body {
     /*width:874px;*/
     width:100%;
     .copyrights {
-      width:435px;
+      width:414px;
       height:144px;
       float:left;
 
@@ -300,7 +301,7 @@ body {
         color: white;
         font-size:13px;
         margin-top:25px;
-        margin-left:4px;
+        margin-left:0px;
         li {
           padding: 0 14px;
           float:left;
@@ -328,7 +329,7 @@ body {
     background: url("/assets/layout/footer_logo.png") no-repeat scroll 0 0 transparent;
     width:424px;
     height:144px;
-    margin-right: 14px;
+    margin-right: 0px;
     position: relative;
     z-index: 10;
   }

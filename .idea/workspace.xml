@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="welcome.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="welcome.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="23" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-10.84">
+            <state line="213" column="24" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.42114696">
               <folding />
             </state>
           </provider>
@@ -34,16 +34,16 @@
       <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="70" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0">
+            <state line="7" column="38" selection-start="307" selection-end="307" vertical-scroll-proportion="-3.76">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="65" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.41680962">
+            <state line="38" column="65" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,14 +71,14 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/../topclub/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.haml" />
         <option value="$USER_HOME$/Desktop/slider/js/init.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss" />
       </list>
     </option>
   </component>
@@ -534,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="23" selection-start="1656" selection-end="1656" vertical-scroll-proportion="-10.84">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="21" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
@@ -548,16 +541,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="70" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.0">
+        <state line="38" column="65" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="65" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.41680962">
+        <state line="7" column="38" selection-start="307" selection-end="307" vertical-scroll-proportion="-3.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="24" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.42114696">
           <folding />
         </state>
       </provider>

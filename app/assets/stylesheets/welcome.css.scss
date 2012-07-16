@@ -134,6 +134,7 @@ body {
           border-radius: 0 0 0 10px;
           height: 243px;
           float:left;
+
           box-shadow: 0px 2px 4px black;
           background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
@@ -147,9 +148,11 @@ body {
             font-size: 15px;
             font-style: italic;
             margin-left: 15px;
-            margin-top: 20px;
+            margin-top: 15px;
             width: 234px;
-
+            line-height: 24px;
+            font-size: 14px;
+            font-family: Georgia;
           }
         }
         .right_descript {
@@ -168,17 +171,19 @@ body {
           background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
           h1 {
-            font-size: 26px;
-            font-family: Tahoma, sans-serif;
-
+            font-size: 24px;
           }
           p {
             font-size: 14px;
             width:522px;
+            line-height: 18px;
           }
           p,h1 {
-            margin-left:15px;
+            margin-left:25px;
             margin-top:20px;
+          }
+          p:first-child {
+            margin-top:15px;
           }
         }
     }
@@ -203,11 +208,10 @@ body {
         border-top: 2px #972228 solid;
       }
       h1 {
-        font-size: 26px;
-        font-family: Tahoma, sans-serif;
+        font-size: 24px;
         padding-left:10px;
-        padding-top:10px;
-        padding-bottom:15px;
+        padding-top:12px;
+        padding-bottom:9px;
       }
       ul {
         padding-left:10px;
@@ -225,6 +229,9 @@ body {
             display: block;
             width:207px;
             color:#1d3f68;
+          }
+          a.hedr:hover {
+            text-decoration: underline;
           }
           img {
             display: inline-block;
@@ -244,6 +251,7 @@ body {
             text-decoration: underline;
             padding-top:10px;
             padding-right:5px;
+            font-style: italic;
           }
         }
         li:first-child {

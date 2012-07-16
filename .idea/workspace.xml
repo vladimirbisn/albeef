@@ -25,7 +25,16 @@
       <file leaf-file-name="welcome.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="34" selection-start="7850" selection-end="7850" vertical-scroll-proportion="0.4874552">
+            <state line="35" column="19" selection-start="577" selection-end="577" vertical-scroll-proportion="0.7903226">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="9" selection-start="1459" selection-end="1459" vertical-scroll-proportion="-20.28">
               <folding />
             </state>
           </provider>
@@ -74,10 +83,10 @@
         <option value="$USER_HOME$/Desktop/slider/js/init.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss" />
       </list>
     </option>
@@ -411,7 +420,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -527,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="29" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.94168097">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="21" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
@@ -555,9 +557,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="9" selection-start="1459" selection-end="1459" vertical-scroll-proportion="-20.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="34" selection-start="7850" selection-end="7850" vertical-scroll-proportion="0.4874552">
+        <state line="35" column="19" selection-start="577" selection-end="577" vertical-scroll-proportion="0.7903226">
           <folding />
         </state>
       </provider>

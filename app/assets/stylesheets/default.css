@@ -11,14 +11,14 @@ font-size:11px;
 -----------------------------------------------*/
 
 #content {
-width:800px;
+width:865px;
 margin:100px auto 0;
 }
 
 .slider {
 float:left;
-width:800px;
-height:350px;
+width:865px;
+height:420px;
 position:relative;
 padding-bottom:26px;
 background:url(/assets/layout/gfx/bottom_shadow.png) no-repeat bottom center;
@@ -26,8 +26,8 @@ background:url(/assets/layout/gfx/bottom_shadow.png) no-repeat bottom center;
 
 .sliderContent {
 float:left;
-width:800px;
-height:350px;
+width:865px;
+height:420px;
 clear:both;
 position:relative;
 overflow:hidden;
@@ -66,8 +66,8 @@ background-position:-44px -44px;
 
 .sliderContent .item {
 position:absolute;
-width:800px;
-height:350px;
+width:865px;
+height:420px;
 background:#fff;
 }
 

@@ -13,13 +13,16 @@ body {
   margin:0 auto;
   }
 }
-
+ .slider {
+   width:800px;
+   margin:0 auto;
+ }
 
 .main_header {
   margin-top:-11px;
   clear:both;
   width:896px;
-  height:551px;
+  height:432px;
   .left {
     min-width:152px;
     background: url("/assets/layout/wood_right.png") no-repeat scroll 0 0 transparent;
@@ -30,7 +33,7 @@ body {
     .inside_block {
       width:863px;
       margin: 0 auto;
-        height: 550px;
+        height: 432px;
       .top_part {
         height: 62px;
         margin-top: 2px;
@@ -77,9 +80,11 @@ body {
         }
       }
       .slider {
-        width:862px;
-        height:480px;
+      /*  width:862px;
+        height:480px; */
         clear: both;
+        width:800px;
+        margin: 0 auto;
       }
     }
 

@@ -29,7 +29,14 @@
                   %a{:href => "#"} ВАКАНСИИ
                 %li.last
                   %a{:href => "#"} КОНТАКТЫ
-            %img.slider{:src => "assets/layout/bulls.png"}
+            .slider
+              .sliderContent
+                .item
+                  %img.slider{:src => "assets/layout/slider/bulls.png"}
+                .item
+                  %img.slider{:src => "assets/layout/slider/corn.png"}
+                .item
+                  %img.slider{:src => "assets/layout/slider/enterprise.jpg"}
       .main
         = yield
       .footer

@@ -1,3 +1,12 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+@Styx.Initializers.About =
+
+  initialize: -> $ ->
+
+
+  index: (data) -> $ ->
+
+    $("ul.tabs li a").live "click", ->
+      $("ul.tabs li").removeClass "active"
+      $(this).parent().addClass "active"
+      $(".about_module").hide()
+      $("."+$(this).attr("id")).show()

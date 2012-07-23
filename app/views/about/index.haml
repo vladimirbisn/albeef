@@ -3,9 +3,12 @@
     .tabs_module
       .title
       %ul.tabs
-        %li
-          %a{:href => "#"} миссия
         %li.active
-          %a{:href => "#"} производство
+          %a{:href => "javascript:void(0)", :id => "mission"} миссия
         %li
-          %a{:href => "#"} качество
+          %a{:href => "javascript:void(0)", :id => "production"} производство
+        %li
+          %a{:href => "javascript:void(0)", :id => "quality"} качество
+    .mission.about_module{:style => "display:block;"}
+    .production.about_module{:style => "display:none;"}
+    .quality.about_module{:style => "display:none;"}

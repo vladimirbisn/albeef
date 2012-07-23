@@ -5,12 +5,13 @@
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    = styx_initialize
 
   %body
     .container
       .thin_red_line
         .middle
-      .header
+      .header{:style =>"height:100px;"}
         .main_header
           .inside_block
             .top_part
@@ -27,8 +28,7 @@
                     %li.last{:class =>  ("active" if controller.controller_name == value[:link])}
                       %a{:href => "/#{value[:link]}" }
                         = value[:name]
-      .main
-        = yield
+      = yield
       .footer
         .middle
           .middle_wrap

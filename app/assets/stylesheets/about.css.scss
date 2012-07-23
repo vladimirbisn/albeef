@@ -1,3 +1,43 @@
-// Place all the styles related to the about controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#about_page {
+  .tabs_module {
+    width:865px;
+    height:420px;
+    background: url(/assets/about/feeding.png) no-repeat 0 0;
+    ul.tabs{
+      margin-left:54px;
+      li {
+
+        margin-left: 15px;
+        float:left;
+        border-top: 1px solid grey;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        background:black;
+        opacity: 0.6;
+        border-radius:10px 10px 0 0;
+        width:230px;
+        height:50px;
+        margin-top:369px;
+        a {
+          font-size: 16px;
+          text-align: center;
+          color: white;
+          font-weight: bold;
+          display: block;
+          margin-top: 16px;
+          font-family: Verdana, sans-serif;
+        }
+      }
+      li.active {
+        background:white;
+        opacity: 1;
+        a {
+          color:black;
+        }
+      }
+      li:first-child {
+        margit-left:0;
+      }
+    }
+  }
+}

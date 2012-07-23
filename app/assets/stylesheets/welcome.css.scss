@@ -1,6 +1,13 @@
 @import "compass";
 @import "compass/reset";
 
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -12,6 +19,9 @@ body {
 .header, .main {
   width:865px;
   margin:0 auto;
+  }
+  .header {
+     /*height:100px;  */
   }
 }
  .slider {
@@ -42,7 +52,7 @@ body {
       margin: 0 auto;
 
       .top_part {
-        height: 62px;
+        height: 67px;
         margin-top: 2px;
         width: 863px;
       }
@@ -189,7 +199,7 @@ body {
             line-height: 19px;
           }
           h1 {
-            margin-left:25px;
+            margin-left:20px;
             margin-top:20px;
           }
           p {

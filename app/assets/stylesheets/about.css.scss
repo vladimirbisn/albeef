@@ -18,6 +18,9 @@
         width:230px;
         height:50px;
         margin-top:370px;
+        position: relative;
+        z-index: 10;
+        behavior: url(assets/modules/PIE.htc);
         a {
           font-size: 18px;
           text-align: center;

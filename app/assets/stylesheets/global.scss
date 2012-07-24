@@ -1,0 +1,106 @@
+.middle_with_citat {
+  /* height: 395px; */
+  width: 865px;
+  margin-top:25px;
+  .red_line {
+    border-top: 11px solid #FF1D28;
+
+    .left_descript {
+      width: 260px;
+      background: #d1ccc7;
+      border-radius: 0 0 0 10px;
+      float:left;
+
+      box-shadow: 0px 2px 4px black;
+      background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
+      background: -webkit-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+      background: -o-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+      background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+      background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+      behavior: url(assets/modules/PIE.htc);
+      p {
+        color: #3A060A;
+        font-size: 15px;
+        font-style: italic;
+        margin-left: 15px;
+        margin-top: 25px;
+        width: 234px;
+        line-height: 24px;
+        font-size: 14px;
+        font-family: Georgia;
+      }
+    }
+
+    .right_descript {
+      width:595px;
+      background: #d1ccc7;
+      border-radius: 0 0 10px 0;
+      margin-left:10px;
+      float:left;
+      box-shadow: 0px 2px 4px black;
+      background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
+      background: -webkit-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+      background: -o-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+      background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+      background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+      behavior: url(assets/modules/PIE.htc);
+      padding-bottom:20px;
+      h1 {
+        font-size: 24px;
+        color: #212121;
+      }
+      p, ul {
+        font-size: 14px;
+        width:560px;
+        line-height: 19px;
+        margin-left:20px;
+        margin-top:15px;
+      }
+      h1 {
+        margin-left:20px;
+        margin-top:20px;
+      }
+      ul {
+        list-style-type: disc !important;
+        padding-left:14px;
+      }
+    }
+  }
+}
+
+.middle_full_block {
+  clear: both;
+  background: #d1ccc7;
+  box-shadow: 0px 2px 4px black;
+  border-radius: 0 0 10px 10px;
+  background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
+  background: -webkit-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+  background: -o-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+  background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+  background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+  behavior: url(assets/modules/PIE.htc);
+
+  .border_red {
+    border-bottom: 5px #ff1d28 solid;
+    border-top: 2px #972228 solid;
+  }
+  h1 {
+    color: #212121;
+    font-size: 24px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-top: 12px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+}

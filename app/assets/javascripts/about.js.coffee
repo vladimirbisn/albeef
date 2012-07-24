@@ -1,12 +1,13 @@
 @Styx.Initializers.About =
 
   initialize: -> $ ->
+    $("body").addClass $.browser
 
 
   index: (data) -> $ ->
 
-    $("ul.tabs li a").live "click", ->
+    $("ul.tabs li").live "click", ->
       $("ul.tabs li").removeClass "active"
-      $(this).parent().addClass "active"
+      $(this).addClass "active"
       $(".about_module").hide()
       $("."+$(this).attr("id")).show()

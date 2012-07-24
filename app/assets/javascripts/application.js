@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= jquery.browser
 //= require mobilyslider
 //= require styx
+//= jquery.browser
 //= require_tree .

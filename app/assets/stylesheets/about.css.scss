@@ -18,6 +18,7 @@
         z-index: 10;
         -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
         filter: alpha(opacity=60);
+        cursor:pointer;
         behavior: url(assets/modules/PIE.htc);
         a {
           font-size: 18px;
@@ -58,5 +59,70 @@
   }
 }
 
-.msie8 #about_page .tabs li {
+.production.about_module {
+.middle_with_citat .left_descript {
+    height:303px;
+  }
+}
+.quality.about_module {
+  .middle_with_citat .left_descript {
+    height:303px;
+  }
+}
+.mission.about_module {
+
+
+  .middle_with_citat  {
+    height:258px;
+    .left_descript {
+    height:246px;
+  }
+
+
+  }
+  .two_blocks {
+    width:865px;
+    margin-top:25px;
+    height: 255px;
+    clear:both;
+    .middle_full_block {
+      width:425px;
+      height:255px;
+      display: inline-block;
+      margin-left:22px;
+      vertical-align: top;
+    }
+    .video_block {
+      width:415px;
+      height:255px;
+      background: black no-repeat;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .three_blocks {
+    clear: both;
+    margin-top:25px;
+    .middle_full_block {
+      width:258px;
+      height:230px;
+      display:inline-block;
+      vertical-align: top;
+      margin-left:42px;
+      img {
+        width:90px;
+        height:109;
+        margin-left:83px;
+        margin-top:17px;
+      }
+    }
+    .middle_full_block:first-child {
+      margin-left:0;
+    }
+  }
+}
+
+.msie8 .mission.about_module .cart {
+  margin-left: 0 !important;
 }

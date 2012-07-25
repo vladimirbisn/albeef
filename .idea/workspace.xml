@@ -34,7 +34,25 @@
       <file leaf-file-name="about.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/about.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="0" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.88487583">
+            <state line="184" column="52" selection-start="4237" selection-end="4237" vertical-scroll-proportion="0.70993227">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="64" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.9615384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application2.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application2.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="64" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
           </provider>
@@ -82,9 +100,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/news.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/production.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application2.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/global.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/about.js.coffee" />
@@ -92,6 +108,8 @@
         <option value="$USER_HOME$/Desktop/BMo-design-scrollGallery-7efa9ef/Demo/index.html" />
         <option value="$PROJECT_DIR$/app/views/about/index.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application2.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/about.css.scss" />
       </list>
     </option>
@@ -681,13 +699,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/about/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/about.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="23" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
@@ -710,11 +721,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="50" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.34311926" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.haml">
@@ -776,9 +782,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="64" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application2.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="64" selection-start="97" selection-end="97" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/about.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="0" selection-start="5875" selection-end="5875" vertical-scroll-proportion="0.88487583">
+        <state line="184" column="52" selection-start="4237" selection-end="4237" vertical-scroll-proportion="0.70993227">
           <folding />
         </state>
       </provider>

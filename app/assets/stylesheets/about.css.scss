@@ -105,11 +105,12 @@
     clear: both;
     margin-top:25px;
     .middle_full_block {
+      border-radius: 10px;
       width:258px;
       height:230px;
       display:inline-block;
       vertical-align: top;
-      margin-left:42px;
+      margin-left:42.5px;
       img {
         width:90px;
         height:109;
@@ -119,6 +120,147 @@
     }
     .middle_full_block:first-child {
       margin-left:0;
+    }
+  }
+}
+
+.production.about_module {
+  .middle_with_citat {
+    height: 314px;
+  }
+
+  .two_blocks {
+    width:865px;
+    height:382px;
+    margin-top: 25px;
+
+    ul {
+      display:inline-block;
+      vertical-align:top;
+      height:382px;
+      width:426px;
+      li {
+        width:426px;
+        height:42px;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom:36px;
+        background: -moz-linear-gradient(top, #f4f2f1 0%, #dedad7 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f2f1), color-stop(100%,#dedad7));
+        background: -webkit-linear-gradient(top, #f4f2f1 0%,#dedad7 100%);
+        background: -o-linear-gradient(top, #f4f2f1 0%,#dedad7 100%);
+        background: -ms-linear-gradient(top, #f4f2f1 0%,#dedad7 100%);
+        background: linear-gradient(to bottom, #f4f2f1 0%,#dedad7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f2f1', endColorstr='#dedad7',GradientType=0 );
+        behavior: url(assets/modules/PIE.htc);
+        a {
+          font-size: 14px;
+          display: block;
+          text-align: center;
+          color: #363534;
+          padding-top: 13px;
+        }
+      }
+      li:after {
+        border-color: #dedad7 transparent;
+        border-style: solid;
+        border-width: 25px 96px 0;
+        bottom: -25px;
+        content: "";
+        display: block;
+        left: 116px;
+        position: absolute;
+      }
+      li.first {
+        background: #ff1d28;
+        position: relative;
+        font-weight: bold;
+        border-radius: 10px;
+        a {
+          color: #fcfbfb;
+        }
+      }
+      li.first:after {
+        border-color: #ff1d28 transparent;
+        border-style: solid;
+        border-width: 25px 96px 0;
+        bottom: -25px;
+        content: "";
+        display: block;
+        left: 116px;
+        position: absolute;
+      }
+
+      li.last {
+        height:62px;
+        background: grey;
+        margin-bottom:0;
+        a {
+          color: #fcfbfb;
+          padding-top: 22px;
+        }
+      }
+      li.last:after {
+        border:0px solid black;
+      }
+    }
+    .middle_full_block {
+      display:inline-block;
+      vertical-align:top;
+      width:412px;
+      height:373px;
+      margin-left:22px;
+      p {
+        width: 367px;
+      }
+    }
+  }
+  .bottom_module.middle_full_block {
+    width:865px;
+    height: 485px;
+    border-radius: 10px;
+    margin-top: 25px;
+    .our_equipment {
+      display: inline-block;
+      vertical-align: top;
+      width:371px;
+      height:428px;
+      h1 {
+        padding-top:20px;
+        padding-left:20px;
+      }
+    }
+    #gallery {
+      margin-top:20px;
+      margin-left: 28px;
+      width:442px;
+      height:427px;
+      display: inline-block;
+      vertical-align: top;
+      #thumbarea {
+        padding-top:6px;
+      }
+      #thumbareaContent {
+        img {
+        width:120px;
+        height:80px;
+        }
+      }
+      #imageareaContent {
+        margin: 0 0 -2px !important;
+        img {
+          width:416px;
+          height:263px;
+        }
+      }
+      #scrollGalleryHead {
+        margin-top:0 !important;
+        padding-top:0 !important;
+      }
+      #scrollGalleryFoot {
+        margin-top:0;
+        margin-bottom:5px;
+      }
     }
   }
 }

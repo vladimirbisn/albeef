@@ -3,6 +3,11 @@
   initialize: -> $ ->
     $("body").addClass $.browser
 
+    scrollGalleryObj = new scrollGallery(
+      start: 0
+      autoScroll: true
+    )
+
 
   index: (data) -> $ ->
 

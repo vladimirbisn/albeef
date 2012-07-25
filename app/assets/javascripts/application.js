@@ -16,4 +16,7 @@
 //= require mobilyslider
 //= require styx
 //= jquery.browser
+//= mootools_core
+//= mootools_more
+//= scroll_gallery
 //= require_tree .

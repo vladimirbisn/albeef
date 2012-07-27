@@ -1,13 +1,6 @@
 @Styx.Initializers.About =
 
   initialize: -> $ ->
-    $("body").addClass $.browser
-
-    scrollGalleryObj = new scrollGallery(
-      start: 0
-      autoScroll: true
-    )
-
 
   index: (data) -> $ ->
 
@@ -15,4 +8,12 @@
       $("ul.tabs li").removeClass "active"
       $(this).addClass "active"
       $(".about_module").hide()
-      $("."+$(this).attr("id")).show()
+      id = $(this).attr("id")
+      $("."+id).show()
+
+      if id == "production" and @is_visited_prod_tab != "true"
+        scrollGalleryObj = new scrollGallery(
+          start: 0
+          autoScroll: true
+        )
+        @is_visited_prod_tab = "true"

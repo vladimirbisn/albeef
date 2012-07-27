@@ -1,0 +1,17 @@
+.footer
+  .middle
+    .middle_wrap
+      .copyrights.cf
+        %ul
+          - menu = {0 => {:name => "О КОМПАНИИ",:name_small_letter =>"О Компании", :link => "about"}, 1 => {:name => "ПРОДУКЦИЯ",:name_small_letter =>"Продукция", :link => "production"}, 2 => {:name => "НОВОСТИ", :name_small_letter => "Новости", :link => "news"}, 3 => {:name => "ВАКАНСИИ", :name_small_letter =>"Вакансии", :link => "jobs"}, 4 => {:name => "КОНТАКТЫ", :name_small_letter => "Контакты", :link => "contacts", :class => "last"}}
+          - menu.each do |key, value|
+            - if !value[:class]
+              %li.cf{:class =>  ("active" if controller.controller_name == value[:link])}
+                %a{:href => "/#{value[:link]}" }
+                  = value[:name_small_letter]
+            - else
+              %li.cf.last{:class =>  ("active" if controller.controller_name == value[:link])}
+                %a{:href => "/#{value[:link]}" }
+                  = value[:name_small_letter]
+        %p &copy; 2012 ООО «АЛБИФ». Все права защищены.
+      .footer_logo.cf

@@ -1,13 +1,7 @@
 !!!
 %html{:lang => "ru"}
   %head
-    %meta{:content => "IE=8", "http-equiv" => "X-UA-Compatible"}
-    %title Albeef
-    = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
-    = styx_initialize
-
+    = render "layouts/head"
   %body
     .container
       .thin_red_line
@@ -16,33 +10,18 @@
         .main_header
           .inside_block
             .top_part
-              %a.logo{:href => "/"}
+              %a.logo.cf{:href => "/"}
                 %img{:src => "assets/layout/logo.png"}
-              %ul.menu
+              %ul.menu.cf
                 - menu = {0 => {:name => "О КОМПАНИИ",:name_small_letter =>"О Компании", :link => "about"}, 1 => {:name => "ПРОДУКЦИЯ",:name_small_letter =>"Продукция", :link => "production"}, 2 => {:name => "НОВОСТИ", :name_small_letter => "Новости", :link => "news"}, 3 => {:name => "ВАКАНСИИ", :name_small_letter =>"Вакансии", :link => "jobs"}, 4 => {:name => "КОНТАКТЫ", :name_small_letter => "Контакты", :link => "contacts", :class => "last"}}
                 - menu.each do |key, value|
                   - if !value[:class]
-                    %li{:class =>  ("active" if controller.controller_name == value[:link])}
+                    %li.cf{:class =>  ("active" if controller.controller_name == value[:link])}
                       %a{:href => "/#{value[:link]}" }
                         = value[:name]
                   - else
-                    %li.last{:class =>  ("active" if controller.controller_name == value[:link])}
+                    %li.cf.last{:class =>  ("active" if controller.controller_name == value[:link])}
                       %a{:href => "/#{value[:link]}" }
                         = value[:name]
       = yield
-      .footer
-        .middle
-          .middle_wrap
-            .copyrights
-              %ul
-                - menu.each do |key, value|
-                  - if !value[:class]
-                    %li{:class =>  ("active" if controller.controller_name == value[:link])}
-                      %a{:href => "/#{value[:link]}" }
-                        = value[:name_small_letter]
-                  - else
-                    %li.last{:class =>  ("active" if controller.controller_name == value[:link])}
-                      %a{:href => "/#{value[:link]}" }
-                        = value[:name_small_letter]
-              %p &copy; 2012 ООО «АЛБИФ». Все права защищены.
-            .footer_logo
+      = render "layouts/footer"

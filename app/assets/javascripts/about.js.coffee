@@ -10,10 +10,11 @@
       $(".about_module").hide()
       id = $(this).attr("id")
       $("."+id).show()
-
+      $(".tabs_module").removeClass().addClass("tabs_module "+id+"_tab")
       if id == "production" and @is_visited_prod_tab != "true"
         scrollGalleryObj = new scrollGallery(
           start: 0
           autoScroll: true
         )
         @is_visited_prod_tab = "true"
+

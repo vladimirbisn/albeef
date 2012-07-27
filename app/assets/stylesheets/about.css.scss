@@ -1,8 +1,16 @@
 #about_page {
+  .production_tab {
+    background: url(/assets/about/production.png) no-repeat 0 0;
+  }
+  .mission_tab {
+    background: url(/assets/about/mission.png) no-repeat 0 0;
+  }
+  .quality_tab {
+    background: url(/assets/about/quality.png) no-repeat 0 0;
+  }
   .tabs_module {
     width:865px;
     height:420px;
-    background: url(/assets/about/feeding.png) no-repeat 0 0;
     ul.tabs{
       margin-left:54px;
       li {

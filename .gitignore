@@ -13,3 +13,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+.idea
+.rvmrc
+public/map_markers
+public/system
+public/tmp

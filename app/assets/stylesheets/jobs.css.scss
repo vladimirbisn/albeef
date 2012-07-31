@@ -1,3 +1,48 @@
-// Place all the styles related to the jobs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#jobs_page {
+  a {
+    color: #1D3F68;
+  }
+
+
+  .middle_full_block {
+    padding-bottom:25px;
+    ul {
+      margin-left:36px;
+      list-style-image: url("/assets/jobs/red_arrow.png");
+      margin-top:15px;
+      li {
+        padding-bottom:10px;
+        line-height: 17px;
+        span, a {
+          position: relative;
+          top: -4px;
+        }
+      }
+    }
+  }
+  .jobs_offer {
+    margin-top:25px;
+  }
+
+  .pics_module {
+    height: 329px;
+    width: 865px;
+    background: url("/assets/jobs/jobs.png") no-repeat scroll 0 0 transparent;
+  }
+
+  .middle_with_citat{
+    height: auto !important;
+
+    h1 {
+      padding-top: 14px;
+      padding-bottom: 12px;
+    }
+  }
+
+   .map_module {
+    margin-top: 20px;
+  }
+
+  .no_mrg_top {margin-top:0px;}
+
+}

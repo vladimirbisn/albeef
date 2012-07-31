@@ -1,3 +1,36 @@
-// Place all the styles related to the contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#contacts_page {
+  .pics_module {
+    height: 329px;
+    width: 865px;
+    background: url("/assets/contacts/contacts.png") no-repeat scroll 0 0 transparent;
+  }
+
+  .middle_with_citat{
+    height: auto !important;
+    h1 {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    }
+  }
+
+  .text_module {
+    margin-top: 25px;
+    margin-left:10px;
+    table {
+      td {
+        padding-bottom: 15px;
+        font-size: 16px;
+        color:#000000;
+
+      }
+      td:first-child {
+        color:#777777;
+        font-size: 18px;
+        width:100px;
+      }
+    }
+  }
+  .map_module {
+   margin-top: 20px;
+  }
+}

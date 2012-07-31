@@ -2,13 +2,11 @@
   a {
     color: #1D3F68;
   }
-
-
   .middle_full_block {
     padding-bottom:25px;
     ul {
       margin-left:36px;
-      list-style-image: url("/assets/jobs/red_arrow.png");
+      list-style-image: url("/assets/red_arrow.png");
       margin-top:15px;
       li {
         padding-bottom:10px;
@@ -45,4 +43,89 @@
 
   .no_mrg_top {margin-top:0px;}
 
+
+  /* job_descr page*/
+
+  .desr_module {
+    margin-top:15px;
+    margin-left:10px;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+      padding-top:35px;
+      padding-bottom:15px;
+    }
+
+    .profes {
+      font-size: 18px;
+      padding-left:15px;
+    }
+    p {
+      padding-left:15px;
+      font-size: 14px;
+      width:575px;
+      line-height: 18px;
+
+    }
+    a {
+      float: left;
+      display: block;
+      margin-top:35px;
+      font-size:14px;
+      margin-bottom:70px;
+      padding-top:8px;
+      padding-bottom:8px;
+    }
+  }
+
+  /* job_descr page*/
+
+  .allicat_form {
+    padding-top:25px;
+    padding-bottom:70px;
+    width:550px;
+    .line {
+      padding-bottom:20px;
+    }
+    label {
+      width:263px;
+      display: block;
+      float:left;
+      padding-left:10px;
+      padding-top:7px;
+      font-size: 14px;
+    }
+    input {
+      float:left;
+      width:238px;
+    }
+    input, select {
+      padding: 5px 0 ;
+    }
+    select {
+      float:left;
+    }
+    #prof {
+      width:238px;
+    }
+    .birth_date {
+      float:left;
+    }
+    #month, #year {margin-left: 36px;}
+  }
+
 }
+
+/* job_results page*/
+.results {
+  height: 100%;
+} .show_text {
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 2em;
+    width:454px;
+    margin:0 auto;
+    height: 8em;
+  }
+
+.noPd {padding-bottom:0px !important;}

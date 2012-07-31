@@ -1,0 +1,48 @@
+.main
+  #jobs_page
+    .pics_module
+    .middle_with_citat
+      .red_line
+        .middle_full_block.noPd
+          %h1 АНКЕТА СОИСКАТЕЛЯ
+    %form.allicat_form{:method => "post", :action => "/jobs/results"}
+      .line.cf
+        %label.cf{:for => "last_name"} Фамилия:<sup>*</sup>
+        %input.cf{:type => "text", :id => "last_name"}
+      .line.cf
+        %label.cf{:for => "first_name"} Имя:<sup>*</sup>
+        %input.cf{:type => "text", :id => "first_name"}
+      .line.cf
+        %label.cf{:for => "middle_name"} Отчество:<sup>*</sup>
+        %input.cf{:type => "text", :id => "middle_name"}
+      .line.cf
+        %label.cf{:for => "middle_name"} Дата рождения:<sup>*</sup>
+        .birth_date.cf
+          %select#day.cf
+            %option 1
+            %option 2
+          %select#month.cf
+            %option Январь
+            %option Февраль
+          %select#year.cf
+            %option 1980
+            %option 1981
+      .line.cf
+        %label.cf{:for => "middle_name"} Пол:<sup>*</sup>
+        %select.year.cf
+          %option женский
+          %option мужской
+      .line.cf
+        %label.cf{:for => "cell_phone"} Мобильный телефон:
+        %input.cf{:type => "text", :id => "cell_phone"}
+      .line.cf
+        %label.cf{:for => "cell_phone"} Домашний телефон:
+        %input.cf{:type => "text", :id => "home_phone"}
+      .line.cf
+        %label.cf{:for => "email"} Email:<sup>*</sup>
+        %input.cf{:type => "text", :id => "email"}
+      .line.cf
+        %label.cf{:for => "prof"} Вакансия:<sup>*</sup>
+        %select.cf#prof
+          %option Технолог
+      %input.cf.button.cf{:type => "submit", :value => "Отправить"}

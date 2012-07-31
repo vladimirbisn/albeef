@@ -117,3 +117,55 @@
 .cf {
   *zoom: 1;
 }
+
+.button {
+  background: -moz-linear-gradient(center top , #FFFFFF, #DCDCDC) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DCDCDC));
+  background: -webkit-linear-gradient(top, #FFFFFF 0%,#DCDCDC 100%);
+  background: -o-linear-gradient(top, #FFFFFF 0%,#DCDCDC 100%);
+  background: -ms-linear-gradient(top, #FFFFFF 0%,#DCDCDC 100%);
+  background: linear-gradient(to bottom, #FFFFFF 0%,#DCDCDC 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#DCDCDC',GradientType=0 );
+  border: 1px solid #B7B7B7 !important;
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  cursor: pointer;
+  display: block;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0 2px;
+  outline: medium none;
+  padding: 0.28em 2.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  vertical-align: baseline;
+  z-index: 10;
+  color:black !important;
+  behavior: url(assets/modules/PIE.htc);
+}
+
+.button:hover {
+  background: -moz-linear-gradient(center top , #EDEDED, #DCDCDC) repeat scroll 0 0 transparent;
+  text-decoration: none;
+}
+.button:active {
+  background: -moz-linear-gradient(center top , #EDEDED, #FFFFFF) repeat scroll 0 0 transparent;
+  color: #606060;
+}
+
+.more {
+  color:#491208 !important;
+}
+
+.red_large {
+  font-style: italic;
+  font-size:14px;
+  color: #ed1b24;
+}
+.red_med {
+  font-style: italic;
+  font-size:12px;
+  color: #ed1b24;
+}

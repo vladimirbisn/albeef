@@ -1,4 +1,25 @@
 #contacts_page {
+
+  .text_module {
+    margin-top: 25px;
+    margin-left:10px;
+  }
+
+  table {
+    td {
+      padding-bottom: 15px;
+      font-size: 16px;
+      color:#000000;
+    }
+    td:first-child {
+      color:#777777;
+      font-size: 18px;
+      width:100px;
+    }
+  }
+
+
+
   .pics_module {
     height: 329px;
     width: 865px;
@@ -13,23 +34,8 @@
     }
   }
 
-  .text_module {
-    margin-top: 25px;
-    margin-left:10px;
-    table {
-      td {
-        padding-bottom: 15px;
-        font-size: 16px;
-        color:#000000;
 
-      }
-      td:first-child {
-        color:#777777;
-        font-size: 18px;
-        width:100px;
-      }
-    }
-  }
+
   .map_module {
    margin-top: 20px;
   }

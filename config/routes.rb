@@ -16,7 +16,11 @@ Albeef::Application.routes.draw do
 
   resources :about
   resources :production
-  resources :news
+  resources :news do
+    collection do
+      get :open
+    end
+  end
   resources :jobs do
     collection do
       get :apply

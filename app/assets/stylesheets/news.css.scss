@@ -69,15 +69,15 @@
   .news_list_block {
     margin-top:5px;
     ul {
-      padding: 15px 0;
+      padding-top: 15px;
+      padding-bottom: 14px;
       border-top: 2px solid #ed1b24;
       border-bottom: 2px solid #ed1b24;
 
       list-style-image: url("/assets/red_arrow.png");
         li {
           margin-left:25px;
-          padding-bottom:15px;
-          line-height: 17px;
+          padding-bottom:18px;
           a {
             position: relative;
             top: -4px;
@@ -91,6 +91,9 @@
             left:7px;
             top:-4px;
           }
+      }
+      li.last {
+        padding-bottom: 0;
       }
     }
   }

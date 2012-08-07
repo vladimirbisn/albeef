@@ -45,6 +45,10 @@
       display: inline-block;
       vertical-align: top;
       padding-right:15px;
+      img {
+        width:305px;
+        height: 202px;
+      }
 
     }
 
@@ -92,20 +96,32 @@
             top:-4px;
           }
       }
-      li.last {
+      li:last-child {
         padding-bottom: 0;
       }
     }
   }
-  em {
+  a {
+    color: #491208;
+    display: inline-block !important;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .clickable {
     font-weight: bold;
+    text-decoration: underline;
+  }
+  .no_click {
+    cursor: default;
   }
   .pagination {
     font-size: 14px;
     margin: 15px auto;
-    width:110px;
     display: block;
     color:#1D3F68;
+    text-align: center;
+    width: 50%;
   }
 
   .a_new_block {
@@ -145,7 +161,7 @@
     padding-bottom:50px;
     li {
       float:left;
-      margin-right:195px;
+      margin-right:190px;
       font-size: 15px;
       color: #491208;
       font-style: italic;

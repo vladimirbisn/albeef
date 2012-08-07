@@ -19,4 +19,5 @@
 //= mootools_core
 //= mootools_more
 //= scroll_gallery
+//= selectivizr-min
 //= require_tree .

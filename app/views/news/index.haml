@@ -6,42 +6,34 @@
         .middle_full_block.noPd
           %h1 НОВОСТИ
     .main_new_block
-      .red_large 31.05.2012
+      .red_large
+        = formatDate(@latest.date)
       .photo_text
         .left
-          %a{:href => "#"}
-            %img{:src => "/assets/news/main_new.png"}
+          %a{:href => "/news/#{@latest.id}"}
+            %img{:src => "/assets/news/db/#{@latest.pic_title}"}
         .right
-          %a{:href => "#"} В Липецке обсудили перспективы развития мясного скотоводства страны
-          %p В областной администрации сегодня открылась научно-практическая конференция. В ней приняли участие представители Министерства сельского хозяйства РФ, администрации Липецкой области, известные ученые, руководители и специалисты хозяйств, занимающихся мясным скотоводством, более чем из 30 регионов...
-        %a.more.cf{:href => "#"} Подробнее
+          %a{:href => "/news/#{@latest.id}"}
+            = @latest.header
+          = format483(@latest.body).html_safe
+        %a.more.cf{:href => "/news/#{@latest.id}"} Подробнее
     .news_list_block
       %ul
-        %li
-          %a{:href => "/news/open"} Одобрена госпрограмма развития АПК на 2013-2020 гг.
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} Государство возместит часть затрат российских фермеров на оформление в собственность земли
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} В 2012 году стартует целевая программа «Начинающий фермер»
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} Рассмотрены кандидатуры на должности руководителей субъектов РФ в сфере ветеринарии
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} В каждом районе Липецкой области будет по семейной ферме
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} Продукция липецкой компании представлена на международной выставке
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} В Липецкую область завезут 7 тысяч австралийских бычков
-          %span.red_med 31.05.12
-        %li
-          %a{:href => "/news/open"} Мраморное мясо из Липецка произвело фурор на международной выставке
-          %span.red_med 31.05.12
-        %li.last
-          %a{:href => "/news/open"} В Липецкую область приехали аграрии со всей России и замминистра сельского хозяйства РФ
-          %span.red_med 31.05.12
-      %a.more.pagination{:href => "#"} Страницы: 1 <em>2</em> <em>3</em>
+        - j = 1
+        - @news.each do |value|
+          %li
+            %a{:href => "/news/#{value.id}"}
+              = value.header
+            %span.red_med
+              = formatDate(value.date)
+          - if j > 9
+            - break
+          - j = j + 1
+      .more.pagination
+        %a{:href => "#"} Страницы:
+        - amount = (@news.count/10.0).ceil
+        - if true
+          %a.no_click{:href => "#"} 1
+        - 1.upto(amount-1) do |i|
+          %a.clickable{:href => "#"}
+            = i+1

@@ -7,7 +7,7 @@
           %h1 НОВОСТИ
     .main_new_block
       .red_large
-        = formatDate(@latest.date)
+        = @latest.date #formatDate(@latest.date)
       .photo_text
         .left
           %a{:href => "/news/#{@latest.id}"}

@@ -2,7 +2,7 @@
 
   initialize: -> $ ->
     $("#accordion").accordion
-      event: "mouseover"
+      event: "click"
 
   index: (data) -> $ ->
 

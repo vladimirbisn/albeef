@@ -12,12 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= jquery.browser
+//= require jquery.browser
 //= require mobilyslider
 //= require styx
-//= jquery.browser
-//= mootools_core
-//= mootools_more
-//= scroll_gallery
-//= selectivizr-min
+//= require jquery.browser
+//= require mootools_core
+//= require mootools_more
+//= require scroll_gallery
+//= require selectivizr-min
+//= require jquery.ui.core
+//= require jquery.ui.widget
+//= require jquery.ui.accordion
 //= require_tree .

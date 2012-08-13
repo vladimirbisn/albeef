@@ -1,6 +1,8 @@
 @Styx.Initializers.About =
 
   initialize: -> $ ->
+    $("#accordion").accordion
+      event: "mouseover"
 
   index: (data) -> $ ->
 

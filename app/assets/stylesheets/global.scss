@@ -169,3 +169,35 @@
   font-size:12px;
   color: #ed1b24;
 }
+
+.grey_header {
+  clear: both;
+  box-shadow: 0px 2px 4px black;
+  border-radius: 0 0 7px 7px;
+  background: -moz-linear-gradient(top, #d3cfca 0%, #454443 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3cfca), color-stop(100%,#454443));
+  background: -webkit-linear-gradient(top, #d3cfca 0%,#454443 100%);
+  background: -o-linear-gradient(top, #d3cfca 0%,#454443 100%);
+  background: -ms-linear-gradient(top, #d3cfca 0%,#454443 100%);
+  background: linear-gradient(to bottom, #d3cfca 0%,#454443 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3cfca', endColorstr='#454443',GradientType=0 );
+  behavior: url(assets/modules/PIE.htc);
+  h1 {
+    color:white;
+    font-size: 24px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-top: 12px;
+  }
+}
+
+.grey_white_grad {
+  background: -moz-linear-gradient(top, #ffffff 0%, #d5d2cd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d2cd));
+  background: -webkit-linear-gradient(top, #ffffff 0%,#d5d2cd 100%);
+  background: -o-linear-gradient(top, #ffffff 0%,#d5d2cd 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%,#d5d2cd 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#d5d2cd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d2cd',GradientType=0 );
+  behavior: url(assets/modules/PIE.htc);
+}

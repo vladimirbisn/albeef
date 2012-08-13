@@ -94,7 +94,7 @@
   }
   .two_blocks {
     width:865px;
-    margin-top:25px;
+    margin-top:40px;
     height: 255px;
     clear:both;
     .middle_full_block {
@@ -172,7 +172,7 @@
   .two_blocks {
     width:865px;
     height:382px;
-    margin-top: 25px;
+    margin-top: 40px;
 
     ul {
       display:inline-block;
@@ -313,3 +313,78 @@
 .mission.about_module .cart {
   margin-left: 0 !important;
 }
+
+
+.meat_production_accordion {
+  margin-top:25px;
+  height:1000px;
+  #accordion {
+    margin-top:10px;
+    h3 {
+      height: 87px;
+      border-radius: 0 0 10px 10px;
+      background: -moz-linear-gradient(top, #ffffff 0%, #d5d2cd 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d2cd));
+      background: -webkit-linear-gradient(top, #ffffff 0%,#d5d2cd 100%);
+      background: -o-linear-gradient(top, #ffffff 0%,#d5d2cd 100%);
+      background: -ms-linear-gradient(top, #ffffff 0%,#d5d2cd 100%);
+      background: linear-gradient(to bottom, #ffffff 0%,#d5d2cd 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d2cd',GradientType=0 );
+      /*box-shadow: 0px 2px 4px black;*/
+      behavior: url(assets/modules/PIE.htc);
+      a {
+        color: #265c99;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left:48px;
+        padding-top:34px;
+        display: block;
+        background: url("/assets/large_closed_arrow.png") no-repeat 23px 35px;
+        background-size: 10px 20px;
+        padding-bottom:5px;
+        text-shadow: 0 1px 1px white;
+      }
+    }
+    h3.ui-state-active {
+      a {
+        background: url("/assets/large_open_arrow.png") no-repeat 13px 37px;
+        background-size: 20px 10px;
+      }
+    }
+
+    .ui-accordion-content {
+      height:685px;
+      margin-top:5px;
+      & > img {
+        width:865px;
+        height:323px;
+      }
+      .pic_text_module {
+        img {
+          width: 433px;
+          height: 182px;
+          display: inline-block;
+          vertical-align: top;
+        }
+        .grey_white_grad {
+          width:431px;
+          display: inline-block;
+          height: 182px;
+          margin-left: -3px;
+          vertical-align: top;
+          p {
+            font-size: 15px;
+            line-height: 17px;
+            padding: 15px;
+            }
+        }
+      }
+      .first_text {
+        margin-top:-3px;
+      }
+
+    }
+  }
+  }
+

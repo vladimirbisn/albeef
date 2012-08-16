@@ -16,9 +16,9 @@
           = @new.body.html_safe
     %ul.paginator
       %li
-        << <a href="/news/#{@new.id}"> Предыдущая новость</a>
+        << <a href="/news/#{@previous_new_id.last.id}"> Предыдущая новость</a>
       %li
         << <a href="/news">Все новости</a> >>
       %li.last
-        <a href="/news/#{@new.id}">Следующая новость</a> >>
+        <a href="/news/#{@next_new_id.first.id}">Следующая новость</a> >>
 

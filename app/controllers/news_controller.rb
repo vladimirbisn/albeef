@@ -20,7 +20,10 @@ class NewsController < ApplicationController
 
   def show
     @new = News.find(params[:id])
-    #@next_new_id =  News.where(:id < ?", "2")
+
+    @next_new_id =  News.where("id > ?", params[:id]).limit(1)
+    @previous_new_id = News.where("id < ?", params[:id])
+
     respond_to do |format|
       format.html # show.haml
       format.json { render json: @news }

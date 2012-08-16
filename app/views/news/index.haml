@@ -7,7 +7,7 @@
           %h1 НОВОСТИ
     .main_new_block
       .red_large
-        = @latest.date #formatDate(@latest.date)
+        = formatDate(@latest.date)
       .photo_text
         .left
           %a{:href => "/news/#{@latest.id}"}
@@ -30,10 +30,10 @@
             - break
           - j = j + 1
       .more.pagination
-        %a{:href => "#"} Страницы:
+        %a.pages{:href => "javascript:void(0)"} Страницы:
         - amount = (@news.count/10.0).ceil
         - if true
-          %a.no_click{:href => "#"} 1
-        - 1.upto(amount-1) do |i|
-          %a.clickable{:href => "#"}
+          %a.no_click{:href => "javascript:void(0)"} 1
+        - 1.upto(amount-2) do |i|
+          %a.clickable{:href => "javascript:void(0)"}
             = i+1

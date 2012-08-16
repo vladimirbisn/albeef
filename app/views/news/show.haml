@@ -1,0 +1,24 @@
+.main
+  #news_page
+    .pics_module
+    .middle_with_citat
+      .red_line
+        .middle_full_block.noPd
+          %h1 НОВОСТИ
+    .a_new_block
+      %h1
+        = @new.header
+      .body
+        .red_large.cf
+          = formatDate(@new.date)
+        %img.cf{:src => "/assets/news/db/#{@new.pic_title}"}
+        .text_block
+          = @new.body.html_safe
+    %ul.paginator
+      %li
+        << <a href="/news/#{@new.id}"> Предыдущая новость</a>
+      %li
+        << <a href="/news">Все новости</a> >>
+      %li.last
+        <a href="/news/#{@new.id}">Следующая новость</a> >>
+

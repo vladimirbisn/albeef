@@ -12,6 +12,8 @@ Albeef::Application.routes.draw do
 
   get "welcome/index"
 
+  post "/news/get_news_per_page"
+
   root :to => 'welcome#index'
 
   resources :about

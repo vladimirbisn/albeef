@@ -195,11 +195,13 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f2f1', endColorstr='#dedad7',GradientType=0 );
         behavior: url(assets/modules/PIE.htc);
         a {
-          font-size: 14px;
+          font-size: 13px;
           display: block;
-          text-align: justify;
+          /*text-align: justify;*/
           color: #363534;
-          padding-top: 13px;
+          padding-top: 10px;
+          padding-left: 11px;
+          line-height: 15px;
         }
       }
       li:after {
@@ -238,7 +240,7 @@
         margin-bottom:0;
         a {
           color: #fcfbfb;
-          padding-top: 22px;
+          padding-top: 9px;
         }
       }
       li.last:after {

@@ -181,10 +181,10 @@
       width:426px;
       li {
         width:426px;
-        height:42px;
+        height:70px;
         position: relative;
         border-radius: 10px;
-        margin-bottom:36px;
+        margin-bottom:29px;
         background: -moz-linear-gradient(top, #f4f2f1 0%, #dedad7 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f2f1), color-stop(100%,#dedad7));
         background: -webkit-linear-gradient(top, #f4f2f1 0%,#dedad7 100%);
@@ -197,7 +197,7 @@
         a {
           font-size: 14px;
           display: block;
-          text-align: center;
+          text-align: justify;
           color: #363534;
           padding-top: 13px;
         }
@@ -317,9 +317,9 @@
 
 .meat_production_accordion {
   margin-top:25px;
-  height:1000px;
+  height:1430px;
   #accordion {
-    margin-top:10px;
+    margin-top:25px;
     h3 {
       height: 87px;
       border-radius: 0 0 10px 10px;

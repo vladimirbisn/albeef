@@ -73,8 +73,93 @@
   }
 }
 .quality.about_module {
+  .middle_with_citat {
+    height:60px;
+  }
+  .modules {
+    position: relative;
+    height:450px;
+    div {
+      border-radius: 10px;
+      position: absolute;
+      h1 {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        margin-left:7px;
+        margin-right:7px;
+        padding-bottom:0px;
+      }
+      p {
+        font-size: 12px;
+        text-align: center;
+        margin-left:7px;
+        margin-right:7px;
+      }
+    }
+    .acid {
+      top:60px;
+      left:0px;
+      width:282px;
+      height:200px;
+    }
+    .fat {
+      top:33px;
+      left:325px;
+      width:350px;
+      height:110px;
+    }
+    .meet {
+      top:180px;
+      left:347px;
+      img {
+        width:229px;
+        height:87px;
+      }
+    }
+    .anti_cancirogen {
+      top:188px;
+      left:628px;
+      width:237px;
+      height:123px;
+    }
+    .nutritions {
+      top:355px;
+      left:511px;
+      width:269px;
+      height:83px;
+    }
+    .nitrogen_subs {
+      top:305px;
+      left:157px;
+      width:310px;
+      height:136px;
+    }
+  }
   .middle_with_citat .left_descript {
     height:303px;
+  }
+  .two_blocks {
+    margin-top: 25px;
+    .middle_full_block {
+      width:464px;
+      display: inline-block;
+      vertical-align: top;
+      p {
+        margin-left:10px;
+      }
+      p:last-child {
+        padding-bottom:14px;
+      }
+    }
+    .food_chart {
+      display: inline-block;
+      vertical-align: top;
+      padding-left:10px;
+      img {
+        width:373px;
+      }
+    }
   }
 }
 .mission.about_module {

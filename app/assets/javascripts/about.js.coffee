@@ -3,6 +3,9 @@
   initialize: -> $ ->
     $("#accordion").accordion
       event: "click"
+      header: "h3"
+      collapsible: true
+      active: false
 
   index: (data) -> $ ->
 
@@ -13,10 +16,4 @@
       id = $(this).attr("id")
       $("."+id).show()
       $(".tabs_module").removeClass().addClass("tabs_module "+id+"_tab")
-      if id == "production" and @is_visited_prod_tab != "true"
-        scrollGalleryObj = new scrollGallery(
-          start: 0
-          autoScroll: true
-        )
-        @is_visited_prod_tab = "true"
 

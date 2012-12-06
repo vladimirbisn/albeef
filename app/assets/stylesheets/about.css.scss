@@ -4,6 +4,11 @@
   }
   .mission_tab {
     background: url(/assets/about/mission.png) no-repeat 0 0;
+   }
+  .mission_position {
+    li {
+      padding-bottom: 15px;
+    }
   }
   .quality_tab {
     background: url(/assets/about/quality.png) no-repeat 0 0;
@@ -404,7 +409,6 @@
 
 .meat_production_accordion {
   margin-top:25px;
-  height:1505px;
   #accordion {
     margin-top:25px;
     h3 {

@@ -16,9 +16,6 @@
 //= require mobilyslider
 //= require styx
 //= require jquery.browser
-//= require mootools_core
-//= require mootools_more
-//= require scroll_gallery
 //= require selectivizr-min
 //= require jquery.ui.core
 //= require jquery.ui.widget

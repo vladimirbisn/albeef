@@ -1,5 +1,4 @@
 var init_raphael_cow = function() {
-    $(document).ready(function(){
     paper = Raphael('raphael_cow', 517,325)
     paper.setStart();
 
@@ -38,43 +37,46 @@ var init_raphael_cow = function() {
     var translate='t'+(-1*st.getBBox().x)+','+(-1*st.getBBox().y);
     st.transform(translate);
     st.transform('s1,1,0,0');
+    var current = null;
 
     function callback(member)
     {
     if( member.id != 0 && member.id != 1 && member.id != 14) {
+
         member.mouseover(function (e) {
-            this.toFront();
             this.attr({
                 cursor: 'pointer',
                 fill: '#990000',
-                stroke: '#fff',
-                'stroke-width': '1'
+                stroke: 'none'
+
             });
             this.animate({
-                scale: '1.2'
+                scale: '1'
             }, 200);
         });
+
         member.mouseout(function (e) {
+
             this.animate({
-                scale: '1.05'
-            }, 200);
+                scale: '1'
+            }, 300);
             this.attr({
-                fill: '#EC1A25'
+                fill: '#EC1A25',
+                stroke: 'none'
             });
-
-
-        });
+         });
         member.click(function (e) {
+
             this.animate({
                 fill: '#990000'
-            }, 200);
-            alert (this.id);
+            }, 300);
+
             this.attr({
                 fill: '#EC1A25'
             });
+            alert (this.id);
         });
-        }
+       }
     }
     st.forEach(callback);
-    });
 }

@@ -10,7 +10,6 @@
       background: #d1ccc7;
       border-radius: 0 0 0 10px;
       float:left;
-
       box-shadow: 0px 2px 4px black;
       background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
@@ -204,4 +203,128 @@
 
 .header_ajust {
   height:105px;
+}
+#popup {
+  .dark_layer {
+    opacity: 0.6;
+    background: #000000 no-repeat;
+    position: absolute;
+    top:0;
+    left: 0;
+    filter: alpha(opacity=60);
+  }
+  .popup_layer {
+    width: 865px;
+    height:400px;
+    margin-left:-433px;
+    margin-top:-200px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    background: #ffffff;
+    border-radius: 15px;
+    behavior: url(assets/modules/PIE.htc);
+    .close_popup:hover {
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+    .close_popup {
+      float: right;
+      padding: 5px;
+      display: block;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+      position: absolute;
+      right: 0;
+      top: 4px;
+      img {
+        width:30px;
+        height:30px;
+      }
+    }
+    .grey_header p {
+      color: white;
+      font-size: 24px;
+      padding-bottom: 9px;
+      padding-left: 20px;
+      padding-top: 12px;
+    }
+  }
+
+  .recipe {
+    height:176px;
+    margin-left: 15px;
+    .images_block{
+      img {
+        width:274px;
+        height:173px;
+        border: 1px #CCCCCC solid;
+      }
+    }
+    .text_block {
+      width: 547px;
+      h1 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        color: #265c99;
+        font-family: Arial;
+      }
+      p {
+        line-height: 16px;
+      }
+    }
+
+  .title {
+    font-family: Arial;
+    font-style: italic;
+    font-style: 13px;
+    color: #491208;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-decoration: underline;
+  }
+  }
+  .description {
+    height:145px;
+    margin-top:15px;
+    .images_block{
+      img {
+        width:177px;
+        height:133px;
+        border: 1px #CCCCCC solid;
+        margin-left: 15px;
+      }
+    }
+    .text_block {
+      width: 434px;
+      padding-left: 15px;
+      p {
+        padding-bottom: 15px;
+        line-height: 18px;
+        font-family: Tahoma;
+        font-size: 16px;
+      }
+    }
+  }
+  .images_block {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .text_block {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.grey_gradient_block {
+  box-shadow: 0px 2px 4px black;
+  background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
+  background: -webkit-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+  background: -o-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+  background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
+  background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+  behavior: url(assets/modules/PIE.htc);
 }

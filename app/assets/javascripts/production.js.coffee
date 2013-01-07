@@ -8,8 +8,8 @@
       darkLayer:  "#popup .dark_layer"
       popupCloseButton: "#popup .close_popup"
 
-    $(window).bind 'anyPieceClicked', ->
-      popup.init()
+    $(window).bind 'anyPieceClicked', (e, data) ->
+      popup.init(data.id)
 
   index: (data) -> $ ->
 

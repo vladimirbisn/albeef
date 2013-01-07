@@ -73,8 +73,11 @@ var init_raphael_cow = function() {
             this.attr({
                 fill: '#EC1A25'
             });
-
-            $(window).trigger('anyPieceClicked')
+            $("#raphael_cow").attr("data-part-id", this.id)
+            $(window).trigger('anyPieceClicked',{ id: this.id })
+            // 2 6  5 7 4 3
+            // 10 9 11 8
+            //
         });
        }
     }

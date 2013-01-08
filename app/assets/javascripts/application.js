@@ -24,3 +24,10 @@
 //= require raphael_cow
 //= require_tree .
 
+$(document).ready(function() {
+    var date = new Date()
+    $(".copyrights .year").html(date.getFullYear())
+});
+
+
+

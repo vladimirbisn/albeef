@@ -16,4 +16,8 @@
       id = $(this).attr("id")
       $("."+id).show()
       $(".tabs_module").removeClass().addClass("tabs_module "+id+"_tab")
+     # Temporary hack
+      if id == "production" && $.browser.name == "msie"
+        $(".meat_production_accordion .two_blocks ul").hide()
+        $(".about_scheme").show()
 

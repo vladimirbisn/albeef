@@ -225,7 +225,8 @@
     top:50%;
     left:50%;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
+    border: 5px solid #562929;
     behavior: url(assets/modules/PIE.htc);
     .close_popup:hover {
       opacity: 1;
@@ -239,14 +240,14 @@
       filter: alpha(opacity=70);
       position: absolute;
       right: 0;
-      top: 4px;
+      top: 1px;
       z-index: 100;
       img {
         width:30px;
         height:30px;
       }
     }
-    .grey_header p {
+    .dark_red_gradient p {
       color: white;
       font-size: 24px;
       padding-bottom: 9px;
@@ -276,7 +277,6 @@
       h1 {
         font-size: 25px;
         text-align: center;
-        font-weight: bold;
         color: #265c99;
         font-family: Arial;
       }
@@ -312,13 +312,14 @@
       p {
         padding-bottom: 15px;
         line-height: 18px;
-        font-family: Tahoma;
-        font-size: 16px;
+        font-family: Arial;
+        font-size: 15px;
       }
     }
   }
 }
 }
+/* c51410  772626*/
 
 .grey_gradient_block {
   box-shadow: 0px 2px 4px black;
@@ -329,5 +330,20 @@
   background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
   background: linear-gradient(to bottom, #f8f6f5 0%,#d7d2ce 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#d7d2ce',GradientType=0 );
+  behavior: url(assets/modules/PIE.htc);
+}
+
+.dark_red_gradient {
+  box-shadow: 0px 2px 4px black;
+  border-radius: 0 0 7px 7px;
+  background: -moz-linear-gradient(top, #c51410 0%, #772626 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c51410), color-stop(100%,#772626));
+  background: -webkit-linear-gradient(top, #c51410 0%,#772626 100%);
+  background: -o-linear-gradient(top, #c51410 0%,#772626 100%);
+  background: -ms-linear-gradient(top, #c51410 0%,#772626 100%);
+  background: linear-gradient(to bottom, #c51410 0%,#772626 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c51410', endColorstr='#772626',GradientType=0 );
+  position:relative;
+  z-index: 10;
   behavior: url(assets/modules/PIE.htc);
 }

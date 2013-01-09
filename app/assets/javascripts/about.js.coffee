@@ -2,10 +2,18 @@
 
   initialize: -> $ ->
     $("#accordion").accordion
-      event: "click"
+      event: ""
       header: "h3"
       collapsible: true
       active: false
+
+
+      $(document).ready ->
+       $(".meat_production_accordion h3").click(->
+          $(this).next().toggle('slow')
+          false
+        ).next().hide()
+
 
   index: (data) -> $ ->
 

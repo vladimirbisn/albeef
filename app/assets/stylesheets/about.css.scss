@@ -488,9 +488,8 @@
   }
   }
 
-.ie8 .tabs_module ul li {
-  position: relative;
-  top:1px;
+.ie8 #about_page .tabs_module ul.tabs li {
+  height:51px !important;
 }
 
 .about_scheme {

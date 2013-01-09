@@ -33,5 +33,6 @@ render_list = (data) ->
           page: new_page
         error: (er) ->
         success: (obj) ->
+          console.info obj
           switch_page(new_page)
           render_list(obj)

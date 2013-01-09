@@ -15,6 +15,9 @@ class @Popup
     @popupCloseButton.live "click",() =>
       @hide()
 
+    @popup.find(".dark_layer").live "click",() =>
+      @hide()
+
   renderPopup:(id) ->
     obj  = PopupData.getPartById(id)
     @insertCurrentPartFields(obj)

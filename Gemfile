@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
-gem 'sqlite3', :group => :development
+gem 'rails', '3.2.11'
 gem 'haml'
 gem 'styx'
 
+gem 'sqlite3', :group => :development
 group :production do
   gem 'pg'
 end
@@ -18,3 +18,4 @@ end
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'compass-rails'
+gem 'kaminari'

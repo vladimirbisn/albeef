@@ -1,34 +1,28 @@
 class NewsController < ApplicationController
   layout "application2"
+  before_filter :set_paginator_params,  :get_news_per_page, :only => :index
 
   def index
-    @news = News.order("date desc")
-    @latest = @news.first
-
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @news }
-    end  
-  end
-
-  def get_news_per_page()
-    @news = News.order("date DESC")
-    offset = params[:page].to_i*10
-    render json: @news.limit(10).offset(offset)
   end
 
   def show
-    @new = News.find(params[:id])
-
-    @next_new_id =  News.where("id > ?", params[:id]).limit(1)
-    @previous_new_id = News.where("id < ?", params[:id])
-
-    respond_to do |format|
-      format.html # show.haml
-      format.json { render json: @news }
-    end
+    @current_news = News.find(params[:id])
   end
 
+  def set_paginator_params
+    params[:page].nil? ? @current_page = 1 : @current_page = params[:page].to_i
+    params[:per_page].nil? ? @per_page = 10 : @per_page = params[:per_page].to_i
+  end
+
+  def render_news_per_page
+    set_paginator_params()
+    get_news_per_page()
+
+    render json: @news
+  end
+
+  def get_news_per_page
+    @news = News.order("date DESC").page(@current_page).per(@per_page)
+  end
 
 end

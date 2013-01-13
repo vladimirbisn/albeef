@@ -5,35 +5,34 @@
       .red_line
         .middle_full_block.noPd
           %h1 НОВОСТИ
-    .main_new_block
-      .red_large
-        = formatDate(@latest.date)
-      .photo_text
-        .left
-          %a{:href => "/news/#{@latest.id}"}
-            %img{:src => "/assets/news/db/#{@latest.pic_title}"}
-        .right
-          %a{:href => "/news/#{@latest.id}"}
-            = @latest.header
-          = format483(@latest.body).html_safe
-        %a.more.cf{:href => "/news/#{@latest.id}"} Подробнее
+    - if not @news.nil? and not @news.empty?
+      .main_new_block
+        - @latest_news = @news.first
+        .red_large
+          = formatDate(@latest_news.date)
+        .photo_text
+          .left
+            = link_to( image_tag("/assets/news/db/#{@latest_news.pic_title}"), "/news/#{@latest_news.id}" )
+          .right
+            %a{:href =>"/news/#{@latest_news.id}"}
+              = @latest_news.header
+            = get_first_415_symbols(@latest_news.body).html_safe
+          = link_to( "Подробнее", "/news/#{@latest_news.id}", {:class => "more cf"})
     .news_list_block
       %ul
-        - j = 1
-        - @news.each do |value|
-          %li
-            %a{:href => "/news/#{value.id}"}
-              = value.header
-            %span.red_med
-              = formatDate(value.date)
-          - if j > 9
-            - break
-          - j = j + 1
-      .more.pagination
-        %a.pages{:href => "javascript:void(0)"} Страницы:
-        - amount = (@news.count/10.0).ceil
-        - if true
-          %a.no_click{:href => "javascript:void(0)"} 1
-        - 1.upto(amount-2) do |i|
-          %a.clickable{:href => "javascript:void(0)"}
-            = i+1
+        - if @news.nil? or @news.empty?
+          %li.no_news Нет новостей
+        - else
+          - @news.each do |value|
+            %li
+              %a{:href => "/news/#{value.id}"}
+                = value.header
+              %span.red_med
+                = formatDate(value.date)
+      - if @news.num_pages >= 1
+        .more.pagination
+          %a.pages{:href => "javascript:void(0)"} Страницы:
+          %a.active{:href => "javascript:void(0)"} 1
+          - 1.upto(@news.num_pages - 1) do |i|
+            %a{:href => "javascript:void(0)"}
+              = i+1

@@ -1,36 +1,17 @@
 Albeef::Application.routes.draw do
 
-  get "contacts/index"
-
-  get "jobs/index"
-
-  get "production/index"
-
-  get "about/index"
-
-  get "news/index"
-
-  get "welcome/index"
-
-  post "/news/get_news_per_page"
-
   root :to => 'welcome#index'
 
-  resources :about
-  resources :production
-  resources :news do
-    collection do
-      get :open
-    end
-  end
+  post "/news/render_news_per_page"
+
+  resources :news
+
   resources :jobs do
     collection do
-      get :apply
       get :job_descr
-      post :results
     end
   end
 
-  resources :contacts
+  match ':controller(/:action(/:id(.:format)))'
 
 end

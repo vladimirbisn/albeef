@@ -7,18 +7,13 @@
           %h1 НОВОСТИ
     .a_new_block
       %h1
-        = @new.header
+        = @current_news.header
       .body
         .red_large.cf
-          = formatDate(@new.date)
-        %img.cf{:src => "/assets/news/db/#{@new.pic_title}"}
+          = formatDate(@current_news.date)
+        %img.cf{:src => "/assets/news/db/#{@current_news.pic_title}"}
         .text_block
-          = @new.body.html_safe
-    %ul.paginator
+          = @current_news.body.html_safe
+    %ul.paginator.right_align
       %li
-        << <a href="/news/#{@previous_new_id.last.id}"> Предыдущая новость</a>
-      %li
-        << <a href="/news">Все новости</a> >>
-      %li.last
-        <a href="/news/#{@next_new_id.first.id}">Следующая новость</a> >>
-
+        = link_to "Назад", "/news"

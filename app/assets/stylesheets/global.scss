@@ -347,3 +347,11 @@
   z-index: 10;
   behavior: url(assets/modules/PIE.htc);
 }
+
+.right_align {
+  float: right;
+  li {
+    margin:0 !important;
+  }
+
+}

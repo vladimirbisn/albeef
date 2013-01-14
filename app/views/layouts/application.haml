@@ -10,31 +10,16 @@
         .main_header.welcome
           .inside_block
             .top_part
-              %a.logo.cf{:href => "/"}
-                %img{:src => "/assets/layout/logo.png"}
+              = link_to( image_tag("/assets/layout/logo.png"), "/", {:class => "logo cf"} )
               %ul.menu.cf
                 - menu = {0 => {:name => "О КОМПАНИИ",:name_small_letter =>"О Компании", :link => "about"}, 1 => {:name => "ПРОДУКЦИЯ",:name_small_letter =>"Продукция", :link => "production"}, 2 => {:name => "НОВОСТИ", :name_small_letter => "Новости", :link => "news"}, 3 => {:name => "ВАКАНСИИ", :name_small_letter =>"Вакансии", :link => "jobs"}, 4 => {:name => "КОНТАКТЫ", :name_small_letter => "Контакты", :link => "contacts", :class => "last"}}
                 - menu.each do |key, value|
-                  - if !value[:class]
-                    %li.cf{:class =>  ("active" if controller.controller_name == value[:link])}
-                      %a{:href => "/#{value[:link]}" }
-                        = value[:name]
-                  - else
-                    %li.cf.last{:class =>  ("active" if controller.controller_name == value[:link])}
-                      %a{:href => "/#{value[:link]}" }
-                        = value[:name]
-            .slider.cf
-              .sliderContent
-                .item
-                  %img.slider{:src => "assets/layout/slider/bulls.png"}
-                .item
-                  %img.slider{:src => "assets/layout/slider/corn.png"}
-                .item
-                  %img.slider{:src => "assets/layout/slider/plant.png"}
-                .item
-                  %img.slider{:src => "assets/layout/slider/feed.png"}
-                .item
-                  %img.slider{:src => "assets/layout/slider/trucks.png"}
+                  - activePageClassName = ""
+                  - if controller.controller_name == value[:link]
+                    - activePageClassName = "active"
+                  %li.cf{:class =>  "#{value[:class]} #{activePageClassName}" }
+                    = link_to "#{value[:name]}", "/#{value[:link]}"
+            = render "layouts/slider"
       = yield
       = render "layouts/footer"
 

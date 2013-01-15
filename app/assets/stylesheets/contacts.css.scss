@@ -18,8 +18,6 @@
     }
   }
 
-
-
   .pics_module {
     height: 329px;
     width: 865px;
@@ -34,10 +32,11 @@
     }
   }
 
-
-
   .map_module {
    margin-top: 20px;
-    width:865px;
+   width:865px;
+    img {
+      width:865px;
+    }
   }
 }

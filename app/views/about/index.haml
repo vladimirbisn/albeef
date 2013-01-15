@@ -4,14 +4,13 @@
       .title
       %ul.tabs
         %li.active{:id => "mission"}
-          %a{:href => "javascript:void(0)"} миссия
+          =link_to "миссия", "javascript:void(0)"
         %li{:id => "production"}
-          %a{:href => "javascript:void(0)"} структура
+          =link_to "структура", "javascript:void(0)"
         %li{:id => "quality"}
-          %a{:href => "javascript:void(0)"} качество
-    .mission.about_module{:style => "display:block;"}
-      = render "about/mission"
-    .production.about_module{:style => "display:none;"}
-      = render "about/structure"
-    .quality.about_module{:style => "display:none;"}
-      = render "about/quality"
+          =link_to "качество", "javascript:void(0)"
+          %a{:href => "javascript:void(0)"}
+
+    = render "about/mission"
+    = render "about/structure"
+    = render "about/quality"

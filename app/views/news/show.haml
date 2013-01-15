@@ -11,7 +11,7 @@
       .body
         .red_large.cf
           = formatDate(@current_news.date)
-        %img.cf{:src => "/assets/news/db/#{@current_news.pic_title}"}
+        = image_tag "/assets/news/db/#{@current_news.pic_title}"
         .text_block
           = @current_news.body.html_safe
     %ul.paginator.right_align

@@ -80,7 +80,10 @@
 }
 .quality.about_module {
   .middle_with_citat {
-    height:60px;
+    height:220px;
+    .left_descript {
+      height:208px !important;
+    }
   }
   .modules {
     position: relative;
@@ -167,21 +170,20 @@
       }
     }
   }
+  .wholesome_values .middle_with_citat {
+    height: auto;
+  }
 }
 .mission.about_module {
-
-
   .middle_with_citat  {
-    height:258px;
+    height:400px;
     .left_descript {
-    height:246px;
+    height:400px;
   }
     .right_descript {
-      height:246px;
       padding-bottom:0 !important;
+      height:400px;
     }
-
-
   }
   .two_blocks {
     width:865px;
@@ -224,7 +226,6 @@
         width:230px;
       }
       img {
-
         margin:0 auto;
         display: block;
       }
@@ -234,6 +235,9 @@
         height:108px;
         width:86px;
         margin-top: 20px;
+      }
+      p {
+        width:237px;
       }
     }
     .coins {
@@ -257,7 +261,10 @@
 
 .production.about_module {
   .middle_with_citat {
-    height: 314px;
+    height:297px;
+    .left_descript {
+      height:284px;
+    }
   }
 
   .two_blocks {
@@ -351,6 +358,8 @@
 
       p {
         width: 367px;
+        line-height:25px;
+        padding-top:10px;
       }
       h1 {
         padding-left: 20px;

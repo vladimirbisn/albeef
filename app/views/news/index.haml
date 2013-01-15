@@ -16,7 +16,7 @@
           .right
             %a{:href =>"/news/#{@latest_news.id}"}
               = @latest_news.header
-            = get_first_415_symbols(@latest_news.body).html_safe
+            = get_first_n_symbols(@latest_news.body, 415).html_safe
           = link_to( "Подробнее", "/news/#{@latest_news.id}", {:class => "more cf"})
     .news_list_block
       %ul

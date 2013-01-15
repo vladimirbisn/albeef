@@ -26,6 +26,80 @@ body {
 }
 
 
+.main_header {
+  clear:both;
+  width:896px;
+
+  .left {
+    min-width:152px;
+    background: url("/assets/layout/wood_right.png") no-repeat scroll 0 0 transparent;
+    margin-top:-7px;
+  }
+
+  .inside_block {
+    width:863px;
+    margin: 0 auto;
+
+    .top_part {
+      height: 72px;
+      margin-top: 2px;
+      width: 863px;
+    }
+    .logo {
+      float:left;
+      margin-left: -2px;
+      img {
+        width:195px;
+        height: 65px;
+      }
+    }
+    ul.menu {
+      float:left;
+      margin-left:25px;
+      li {
+        float:left;
+        padding: 24px 14px 2px;
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          color: #444443;
+          font-family: Verdana, Arial, sans-serif;
+          text-transform:uppercase;
+        }
+      }
+      li.active {
+        a {
+          color: #c5161e;
+          border-bottom: 3px solid #c5161e;
+          padding-bottom:11px;
+        }
+      }
+      li:hover {
+        a {
+          border-bottom: 3px solid #c5161e;
+          padding-bottom:11px;
+        }
+      }
+
+      li.last {
+        padding-right: 0;
+
+      }
+    }
+    .slider {
+      width:862px;
+      height:480px;
+      clear: both;
+      margin: 0 auto;
+    }
+  }
+
+
+  & > div {
+    float:left;
+  }
+}
+
 
 .footer {
   clear:both;

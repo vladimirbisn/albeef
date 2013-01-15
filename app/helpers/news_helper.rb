@@ -9,10 +9,5 @@ module NewsHelper
     end
   end
 
-  def get_first_415_symbols(body)
-      if body.size > 415
-        body[0..415]+'...'
-    end
-  end
 
 end

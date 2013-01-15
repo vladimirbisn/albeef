@@ -1,5 +1,4 @@
 .middle_with_citat {
-  /* height: 395px; */
   width: 865px;
   margin-top:25px;
   .red_line {
@@ -117,43 +116,6 @@
   *zoom: 1;
 }
 
-.button {
-  background: -moz-linear-gradient(center top , #FFFFFF, #DCDCDC) repeat scroll 0 0 transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#DCDCDC));
-  background: -webkit-linear-gradient(top, #FFFFFF 0%,#DCDCDC 100%);
-  background: -o-linear-gradient(top, #FFFFFF 0%,#DCDCDC 100%);
-  background: -ms-linear-gradient(top, #FFFFFF 0%,#DCDCDC 100%);
-  background: linear-gradient(to bottom, #FFFFFF 0%,#DCDCDC 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#DCDCDC',GradientType=0 );
-  border: 1px solid #B7B7B7 !important;
-  border-radius: 0.3em 0.3em 0.3em 0.3em;
-  cursor: pointer;
-  display: block;
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: bold;
-  margin: 0 2px;
-  outline: medium none;
-  padding: 0.28em 2.8em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #FFFFFF;
-  vertical-align: baseline;
-  z-index: 10;
-  color:black !important;
-  behavior: url(assets/modules/PIE.htc);
-}
-
-.button:hover {
-  background: -moz-linear-gradient(center top , #EDEDED, #DCDCDC) repeat scroll 0 0 transparent;
-  text-decoration: none;
-}
-.button:active {
-  background: -moz-linear-gradient(center top , #EDEDED, #FFFFFF) repeat scroll 0 0 transparent;
-  color: #606060;
-}
-
 .more {
   color:#491208 !important;
 }
@@ -207,6 +169,7 @@
 .header_ajust {
   height:105px;
 }
+
 #popup {
   .dark_layer {
     opacity: 0.6;
@@ -322,7 +285,6 @@
   }
 }
 }
-/* c51410  772626*/
 
 .grey_gradient_block {
   box-shadow: 0px 2px 4px black;
@@ -336,19 +298,13 @@
   behavior: url(assets/modules/PIE.htc);
 }
 
+
 .dark_red_gradient {
+  @include linear_gradient(#c51410, #772626);
   box-shadow: 0px 2px 4px black;
   border-radius: 0 0 7px 7px;
-  background: -moz-linear-gradient(top, #c51410 0%, #772626 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c51410), color-stop(100%,#772626));
-  background: -webkit-linear-gradient(top, #c51410 0%,#772626 100%);
-  background: -o-linear-gradient(top, #c51410 0%,#772626 100%);
-  background: -ms-linear-gradient(top, #c51410 0%,#772626 100%);
-  background: linear-gradient(to bottom, #c51410 0%,#772626 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c51410', endColorstr='#772626',GradientType=0 );
   position:relative;
   z-index: 10;
-  behavior: url(assets/modules/PIE.htc);
 }
 
 .right_align {

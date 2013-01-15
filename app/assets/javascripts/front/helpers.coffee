@@ -12,6 +12,28 @@ class @Helpers
 
     html.join('')
 
+  @insertCurrentPartFields: (obj, @popup) ->
+    $(@popup).find(".header p").html(obj.name)
+
+    html = []
+    i = 0
+    while i < obj.discription.img.length
+      html.push '<img src="/assets/production/popup/' + obj.discription.img[i] + '">'
+      i++
+    $(@popup).find(".description .images_block").html(html.join(''))
+
+    html = []
+    i = 0
+    while i < obj.discription.text.length
+      html.push "<p>"+ obj.discription.text[i] + "</p>"
+      i++
+    $(@popup).find(".description .text_block").html(html.join(''))
+
+    $(@popup).find(".recipe .text_block h1").html(obj.recipe.header)
+    $(@popup).find(".recipe .text_block .component p:last").html(obj.recipe.components)
+    $(@popup).find(".recipe .text_block .cooking p:last").html(obj.recipe.cooking)
+    $(@popup).find(".recipe .images_block img").attr("src", "/assets/production/popup/" + obj.recipe.img)
+
   @convertToNewsDate = (date) ->
     jsDate = new Date( date.substr(0, 10).replace(/-/g, ","))
     # add 0 before day & month in order to match format ##.##.##

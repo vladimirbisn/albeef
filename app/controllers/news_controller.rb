@@ -1,5 +1,4 @@
 class NewsController < ApplicationController
-  layout "application2"
   before_filter :set_paginator_params,  :get_news_per_page, :only => :index
 
   def index

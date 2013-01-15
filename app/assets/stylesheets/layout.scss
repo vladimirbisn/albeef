@@ -1,0 +1,110 @@
+@import "compass";
+@import "compass/reset";
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background:white;
+}
+.container {
+  clear: both;
+
+  .header, .main {
+    width:865px;
+    margin:0 auto;
+  }
+  .header {
+    height: 105px;
+  }
+}
+
+
+
+.footer {
+  clear:both;
+  margin: 0 auto;
+  margin-top:30px;
+  & > div {
+    width:10px;
+    height: 143px;
+    float:left;
+  }
+  .middle_wrap {
+    width:865px;
+    margin: 0 auto;
+    height: 144px;
+  }
+  .left {
+    background: url("/assets/layout/footer_left.png") no-repeat scroll left top transparent;
+  }
+  .middle {
+
+    background: url("/assets/layout/footer_middle.png") repeat-x scroll left top transparent;
+    /*width:874px;*/
+    width:100%;
+    .copyrights {
+      width:420px;
+      height:144px;
+      float:left;
+
+      ul, p {
+        list-style:none;
+        color: white;
+        font-size:13px;
+        margin-top:25px;
+        margin-left:0px;
+      }
+        li {
+          padding: 0 14px;
+          float:left;
+          border-left: 1px white solid;
+          a {
+            color: white;
+            font-size:13px;
+            text-decoration: underline;
+          }
+
+          a:hover {
+            text-decoration: none;
+          }
+
+        }
+
+        li:first-child {
+          border-left: 0px white solid;
+          padding-left:0;
+        }
+        li.last {
+          padding-right:0;
+        }
+
+      p {
+        clear: both;
+        margin-top:116px;
+      }
+      li.active a, li.active a:hover{
+        text-decoration: none !important;
+        cursor: default;
+      }
+    }
+    .footer_logo {
+      float:right;
+      background: url("/assets/layout/footer_logo.png") no-repeat scroll 0 0 transparent;
+      width:424px;
+      height:144px;
+      margin-right: 0px;
+      position: relative;
+      z-index: 10;
+    }
+  }
+  .right {
+    background: url("/assets/layout/footer_right.png") no-repeat scroll right top transparent;
+  }
+}

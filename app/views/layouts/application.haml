@@ -1,25 +1,32 @@
 !!!
 %html{:lang => "ru"}
   %head
-    = render "layouts/head"
+    %meta{:content => "IE=8", "http-equiv" => "X-UA-Compatible"}
+    %title ООО "АЛБИФ"
+    %link{:href => "/assets/layout/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon" }
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = styx_initialize
   %body
     .container
       .thin_red_line
         .middle
       .header
-        .main_header.welcome
+        .main_header
           .inside_block
             .top_part
               = link_to( image_tag("/assets/layout/logo.png"), "/", {:class => "logo cf"} )
               %ul.menu.cf
-                - menu = {0 => {:name => "О КОМПАНИИ",:name_small_letter =>"О Компании", :link => "about"}, 1 => {:name => "ПРОДУКЦИЯ",:name_small_letter =>"Продукция", :link => "production"}, 2 => {:name => "НОВОСТИ", :name_small_letter => "Новости", :link => "news"}, 3 => {:name => "ВАКАНСИИ", :name_small_letter =>"Вакансии", :link => "jobs"}, 4 => {:name => "КОНТАКТЫ", :name_small_letter => "Контакты", :link => "contacts", :class => "last"}}
-                - menu.each do |key, value|
-                  - activePageClassName = ""
-                  - if controller.controller_name == value[:link]
-                    - activePageClassName = "active"
-                  %li.cf{:class =>  "#{value[:class]} #{activePageClassName}" }
-                    = link_to "#{value[:name]}", "/#{value[:link]}"
-            = render "layouts/slider"
+                = render "layouts/menu"
       = yield
-      = render "layouts/footer"
+      .footer
+        .middle
+          .middle_wrap
+            .copyrights.cf
+              %ul
+                = render "layouts/menu"
+              %p &copy; <span class="year">2012</span> ООО "АЛБИФ". Все права защищены.
+            .footer_logo.cf
+
 

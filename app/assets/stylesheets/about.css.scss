@@ -261,9 +261,9 @@
 
 .production.about_module {
   .middle_with_citat {
-    height:297px;
+    height:315px;
     .left_descript {
-      height:284px;
+      height:303px;
     }
   }
 
@@ -335,7 +335,7 @@
       }
 
       li.last {
-        height:62px;
+        height:79px;
         background: grey;
         margin-bottom:0;
         behavior: url(assets/modules/PIE.htc);
@@ -347,6 +347,14 @@
       li.last:after {
         border:0px solid black;
         behavior: url(assets/modules/PIE.htc);
+      }
+      .second a {
+        position: relative;
+        top: -6px;
+      }
+      .fourth a {
+        position: relative;
+        top: -8px;
       }
     }
     .middle_full_block {
@@ -423,6 +431,9 @@
 
 .meat_production_accordion {
   margin-top:25px;
+  .two_blocks {
+    height:455px !important;
+  }
   #accordion {
     margin-top:25px;
     h3 {
@@ -506,4 +517,9 @@
   height: 457px;
   vertical-align: top;
   width: 430px;
+}
+
+p.full_block {
+  padding-right: 0 !important;
+  padding-top: 10px !important;
 }

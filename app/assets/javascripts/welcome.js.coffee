@@ -7,7 +7,7 @@
       transition: "fade"
       animationSpeed: 800
       autoplay: true
-      autoplaySpeed: 8000
+      autoplaySpeed: 10000
       pauseOnHover: false
       bullets: false
       arrows: true

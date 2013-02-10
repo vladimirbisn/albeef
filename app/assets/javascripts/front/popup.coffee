@@ -12,10 +12,10 @@ class @Popup
     @renderPopup(id)
     @show()
 
-    @popupCloseButton.live "click",() =>
+    @popupCloseButton.on "click",() =>
       @hide()
 
-    @popup.find(".dark_layer").live "click",() =>
+    @popup.find(".dark_layer").on "click",() =>
       @hide()
 
   renderPopup:(id) ->

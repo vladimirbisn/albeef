@@ -10,7 +10,7 @@ class @Paginator
     @init()
 
   init: ->
-    @pageNumbersElement.live "click",(el) =>
+    @pageNumbersElement.on "click",(el) =>
       clickedPageNumber = $(el.currentTarget)
 
       $.ajax

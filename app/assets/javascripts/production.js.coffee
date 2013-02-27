@@ -11,5 +11,14 @@
     $(window).bind 'anyPieceClicked', (e, data) ->
       popup.init(data.id)
 
+    $(".fancybox").fancybox
+      padding: 0
+      openEffect: "elastic"
+      openSpeed: 150
+      closeEffect: "elastic"
+      closeSpeed: 150
+      overlay:
+        closeClick: true
+
   index: (data) -> $ ->
 

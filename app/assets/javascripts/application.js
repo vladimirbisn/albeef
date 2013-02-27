@@ -21,6 +21,8 @@
 //= require jquery.ui.widget
 //= require jquery.ui.accordion
 //= require raphael-min
+//= require jquery.fancybox
+//= require jquery.fancybox.pack
 //= require_tree .
 
 $(document).ready(function() {

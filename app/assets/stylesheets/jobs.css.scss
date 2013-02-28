@@ -1,6 +1,10 @@
 #jobs_page {
   a {
     color: #1D3F68;
+
+  }
+  a:hover {
+    text-decoration: underline;
   }
   .middle_full_block {
     padding-bottom:25px;

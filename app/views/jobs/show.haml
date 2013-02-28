@@ -1,0 +1,18 @@
+.main
+  #jobs_page
+    .pics_module
+    .middle_with_citat
+      .red_line
+        .middle_full_block.noPd
+          %h1 ВАКАНСИИ
+    .desr_module
+      %h1 Название
+      .profes
+        = @current_job.title
+      %h1 Основные требования
+      = @current_job.requirements
+      %h1 Обязанности
+      = @current_job.responsobilities
+      %h1 Условия
+      = @current_job.conditions.html_safe
+      -#%a.button.cf{:href => "/jobs/apply"} Заполнить анкету

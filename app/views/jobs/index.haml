@@ -21,10 +21,17 @@
     .middle_full_block.jobs_offer
       %h1 ВАКАНСИИ
       .border_red
-      %p В рамках данного раздела Вы можете ознакомиться с существующими вакансиями. Задать вопросы, а также отправить свое резюме для рассмотрения можно по адресу: <a href="mailto:rabota@cv.ru">rabota@cv.ru</a>.
-      %ul
-        - ["Руководитель отдела персонала", "Технолог", "Фасовщик", "Кладовщик"].each do |value|
-          %li
-            = link_to value, "/jobs/job_descr"
+      %p В рамках данного раздела Вы можете ознакомиться с существующими вакансиями. Задать вопросы, а также отправить свое резюме для рассмотрения можно по адресу: <a href="mailto:albeef@hlevnoe.lipetsk.ru">albeef@hlevnoe.lipetsk.ru</a>.
+      - if not @job_titles.nil? and not @job_titles.empty?
+        %ul
+          - @job_titles.each do |value|
+            %li
+              = link_to value[:title], "/jobs/" + value[:id].to_s
+      - else
+        %br
+        %p{:style => "text-align:center; font-style:italic;"} К сожалению, открытых вакансий нет
+        %br
+        %br
+        %br
       %p.no_mrg_top Мы будем рады ответить на Ваши вопросы и предложения.
 

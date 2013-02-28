@@ -6,11 +6,7 @@ Albeef::Application.routes.draw do
 
   resources :news
 
-  resources :jobs do
-    collection do
-      get :job_descr
-    end
-  end
+  resources :jobs
 
   match ':controller(/:action(/:id(.:format)))'
 

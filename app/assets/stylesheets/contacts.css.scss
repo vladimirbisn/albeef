@@ -1,5 +1,11 @@
 #contacts_page {
 
+  a {
+    color: #1D3F68;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
   .text_module {
     margin-top: 25px;
     margin-left:10px;

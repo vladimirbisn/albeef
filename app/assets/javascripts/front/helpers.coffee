@@ -18,10 +18,10 @@ class @Helpers
     html = []
     i = 0
     while i < obj.discription.img.length
-      html.push '<img src="/assets/production/popup/' + obj.discription.img[i] + '">'
+      img = '<img src="/assets/production/popup/' + obj.discription.img[i] + '">'
+      html.push("<a class='fancybox' href='/assets/production/popup/" + obj.discription.img[i] + "'>" + img + "</a>")
       i++
-    $(@popup).find(".description .images_block a").html(html.join(''))
-
+    $(@popup).find(".description .images_block").html(html.join(''))
     html = []
     i = 0
     while i < obj.discription.text.length
@@ -33,7 +33,7 @@ class @Helpers
     $(@popup).find(".recipe .text_block .component p:last").html(obj.recipe.components)
     $(@popup).find(".recipe .text_block .cooking p:last").html(obj.recipe.cooking)
     $(@popup).find(".recipe .images_block img").attr("src", "/assets/production/popup/" + obj.recipe.img)
-    $(@popup).find(".description .images_block a").attr("href", "/assets/production/popup/" + obj.discription.img[0])
+    #$(@popup).find(".description .images_block a").attr("href", "/assets/production/popup/" + obj.discription.img[0])
 
   @convertToNewsDate = (date) ->
     jsDate = new Date( date.substr(0, 10).replace(/-/g, ","))

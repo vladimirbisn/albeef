@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'haml'
 gem 'styx'
-
+gem 'thin'
 gem 'sqlite3', :group => :development
 group :production do
   gem 'pg'

@@ -26,6 +26,8 @@
 //= require_tree .
 
 $(document).ready(function() {
+    /*get rid of rambler counter*/
+    $("a img[alt='Rambler\'s Top100']").parent().attr("style", "position:absolute;top:-10000px; opacity:0.1;")
     var date = new Date()
     $(".copyrights .year").html(date.getFullYear())
 });

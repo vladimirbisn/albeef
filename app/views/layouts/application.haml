@@ -9,6 +9,17 @@
     = csrf_meta_tags
     = styx_initialize
   %body
+    / Live internet counter
+    :javascript
+      document.write("<a class="liveinternet" href='http://www.liveinternet.ru/click' "+"target=_blank><img src='//counter.yadro.ru/hit?t23.6;r"+ escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"' alt='' title='LiveInternet: показано число посетителей за"+" сегодня' "+"border='0' width='88' height='15'><\/a>") //
+    / end Live internet counter
+    / begin of Top100 code
+    %script#top100Counter{:src => "http://counter.rambler.ru/top100.jcn?2866322", :type => "text/javascript"}
+    %noscript
+      %a{:href => "http://top100.rambler.ru/navi/2866322/"}
+        %img{:alt => "Rambler's Top100", :border => "0", :src => "http://counter.rambler.ru/top100.cnt?2866322"}/
+    / end of Top100 code
+
     / Rating@Mail.ru counter
     :javascript
       //

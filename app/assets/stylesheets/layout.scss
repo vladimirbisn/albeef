@@ -179,3 +179,9 @@ body {
     background: url("/assets/layout/footer_right.png") no-repeat scroll right top transparent;
   }
 }
+
+.liveinternet {
+  position: absolute;
+  top: -10000px;
+  opacity: 0.1;
+}

@@ -8,7 +8,7 @@ Disallow: /admin
 Disallow: /img
 
 User-agent: *
-Crawl-deleay: 30
+Crawl-delay: 30
 Disallow: /admin
 Disallow: /img
 

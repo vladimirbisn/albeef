@@ -9,6 +9,15 @@
     = csrf_meta_tags
     = styx_initialize
   %body
+    / Rating@Mail.ru counter
+    :javascript
+      //
+      (function(w,n,d,r,s){(new Image).src='http://d5.c6.b3.a2.top.mail.ru/counter?id=2319781;js=13'+
+      ((r=d.referrer)?';r='+escape(r):'')+((s=w.screen)?';s='+s.width+'*'+s.height:'')+';_='+Math.random();})(window,navigator,document);//
+    %noscript
+      %div{:style => "position:absolute;left:-10000px;"}
+        %img{:alt => "Рейтинг@Mail.ru", :height => "1", :src => "http://d5.c6.b3.a2.top.mail.ru/counter?id=2319781;js=na", :style => "border:0;", :width => "1"}/
+    / //Rating@Mail.ru counter
     .container
       .thin_red_line
         .middle

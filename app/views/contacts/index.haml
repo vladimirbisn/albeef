@@ -22,4 +22,28 @@
             %a{:href => "mailto:zakaz@lzeros.ru"} zakaz@lzeros.ru,
             %a{:href => "mailto:albeef@hlevnoe.lipetsk.ru"} albeef@hlevnoe.lipetsk.ru
     .map_module
-      = image_tag "/assets/contacts/map.png"
+      -#= image_tag "/assets/contacts/map.png"
+      / Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало)
+      #ymaps-map-id_1362986452555243518065{:style => "width: 450px; height: 350px;"}
+      %div{:style => "width: 450px; text-align: right;"}
+        %a{:href => "http://api.yandex.ru/maps/tools/constructor/index.xml", :style => "color: #1A3DC1; font: 13px Arial, Helvetica, sans-serif;", :target => "_blank"} Создано с помощью инструментов Яндекс.Карт
+      :javascript
+        function fid_1362986452555243518065(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_1362986452555243518065", {
+                center: [39.11332411913177, 52.206609338062385],
+                zoom: 11,
+                type: "yandex#map"
+            });
+            map.controls
+                .add("zoomControl")
+                .add("mapTools")
+                .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                .add(new ymaps.Placemark([39.13341045731372, 52.204620759851665], {
+                    balloonContent: 'ООО "АЛБИФ"'
+                }, {
+                    preset: "twirl#redDotIcon"
+                }));
+        };
+      %script{:src => "http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_1362986452555243518065", :type => "text/javascript"}
+      / Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец)

@@ -6,7 +6,7 @@ set :deploy_to, '/var/rails/albeef'
 set :user, 'albeef'
 set :use_sudo, false
 ssh_options[:forward_agent] = true
-set :rails_env, :production
+set :rails_env, 'production'
 
 set :deploy_via, :remote_cache
 set :repository,  "https://github.com/vladimirbisn/albeef.git"

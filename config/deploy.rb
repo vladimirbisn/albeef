@@ -1,4 +1,4 @@
-require 'bundler/capistrano'
+  require 'bundler/capistrano'
 load 'deploy/assets'
 
 server '109.234.154.252', :app, :web, :db, primary: true

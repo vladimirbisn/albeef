@@ -9,18 +9,26 @@
       %table
         %tr
           %td Адрес:
-          %td 399265, Липецкая область, Хлевенский район, х. Елец-Маланинский
+          %td
+            = @contact.address
         %tr
           %td Телефон:
-          %td 8-(47477) 2-31-12
+          %td
+            = @contact.phone
         %tr
           %td Факс:
-          %td 8-(47477) 2-31-58
+          %td
+            = @contact.fax
         %tr
           %td E-mail:
           %td
-            %a{:href => "mailto:zakaz@lzeros.ru"} zakaz@lzeros.ru,
-            %a{:href => "mailto:albeef@hlevnoe.lipetsk.ru"} albeef@hlevnoe.lipetsk.ru
+            - emails_list = split_emails(@contact.emails)
+            - emails_list.each_with_index do |value, index|
+              %a{:href => "mailto:"+value}
+                - if (index+1) < emails_list.size
+                  = value+", "
+                - else
+                  = value
     .map_module
       -#= image_tag "/assets/contacts/map.png"
       / Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало)

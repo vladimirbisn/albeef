@@ -9,7 +9,19 @@
       popupCloseButton: "#popup .close_popup"
 
     $(window).bind 'anyPieceClicked', (e, data) ->
-      popup.init(data.id)
+
+      $.ajax
+        url: '/production/render_animal_part'
+        type: "post"
+        data:
+          part_id: data.id
+        error: (er) ->
+          alert "ошибка"
+          console.info er
+        success: (data) =>
+          popup.init(data)
+
+
 
     $(".fancybox").fancybox
       padding: 0

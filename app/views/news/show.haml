@@ -11,9 +11,10 @@
       .body
         .red_large.cf
           = formatDate(@current_news.date)
-        = image_tag "/assets/news/db/#{@current_news.pic_title}"
+        = image_tag "#{@current_news.pic_title}"
         .text_block
-          = @current_news.body.html_safe
+          %p
+            = @current_news.body.html_safe
     %ul.paginator.right_align
       %li
         = link_to "Назад", "/news"

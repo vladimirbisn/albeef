@@ -16,7 +16,7 @@
           %li
             = link_to( get_first_n_symbols(row[:header], 80), "/news/#{row[:id]}", {:class => "hedr"})
             .bdy
-              = link_to( image_tag("/assets/news/db/#{row[:pic_title]}" ), "/news/#{row[:id]}")
+              = link_to( image_tag("/uploads/news/#{row[:pic_title]}" ), "/news/#{row[:id]}")
               %p
                 = get_first_n_symbols( row[:body].gsub(/[<p><\/p>]/, "" ), 100)
             = link_to("Подробнее", "/news/#{row[:id]}", {:class => "ref"})

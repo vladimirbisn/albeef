@@ -13,27 +13,31 @@ class @Helpers
     html.join('')
 
   @insertCurrentPartFields: (obj, @popup) ->
-    $(@popup).find(".header p").html(obj.name)
+    obj = obj[0]
+
+    $(@popup).find(".header p").html(obj.part_title)
 
     html = []
     i = 0
-    while i < obj.discription.img.length
-      img = '<img src="/assets/production/popup/' + obj.discription.img[i] + '">'
-      html.push("<a class='fancybox' href='/assets/production/popup/" + obj.discription.img[i] + "'>" + img + "</a>")
-      i++
+
+    if obj.part_img_url1.url
+      img = "<a class='fancybox' href='" + obj.part_img_url1.url + "'>" + "<img src='" + obj.part_img_url1.url + "'>" + "</a>"
+      html.push(img)
+
+    if obj.part_img_url2.url
+      img = "<a class='fancybox' href='" + obj.part_img_url2.url + "'>" + "<img src='" + obj.part_img_url2.url + "'>" + "</a>"
+      html.push(img)
+
     $(@popup).find(".description .images_block").html(html.join(''))
-    html = []
-    i = 0
-    while i < obj.discription.text.length
-      html.push "<p>"+ obj.discription.text[i] + "</p>"
-      i++
-    $(@popup).find(".description .text_block").html(html.join(''))
 
-    $(@popup).find(".recipe .text_block h1").html(obj.recipe.header)
-    $(@popup).find(".recipe .text_block .component p:last").html(obj.recipe.components)
-    $(@popup).find(".recipe .text_block .cooking p:last").html(obj.recipe.cooking)
-    $(@popup).find(".recipe .images_block img").attr("src", "/assets/production/popup/" + obj.recipe.img)
-    #$(@popup).find(".description .images_block a").attr("href", "/assets/production/popup/" + obj.discription.img[0])
+    $(@popup).find(".description .text_block").html("<p>"+ obj.top_description.replace("<br>", "<br><br>") + "</p>")
+
+    $(@popup).find(".recipe .text_block h1").html(obj.dish_title)
+
+    $(@popup).find(".recipe .text_block .component p:last").html(obj.ingredients)
+    $(@popup).find(".recipe .text_block .cooking p:last").html(obj.preparation)
+
+    $(@popup).find(".recipe .images_block img").attr("src", obj.dish_img_url.url)
 
   @convertToNewsDate = (date) ->
     jsDate = new Date( date.substr(0, 10).replace(/-/g, ","))

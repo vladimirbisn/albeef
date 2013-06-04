@@ -2,6 +2,31 @@
  .slider {
    margin:0 auto;
    float:none;
+   .sliderContent {
+     .item {
+      .text_module {
+        font-family: Arial,sans-serif;
+        position: absolute;
+        right: 26px;
+        top: 56px;
+        h1 {
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #FFFFFF;
+          font-size: 22px;
+          padding: 10px;
+          text-transform: uppercase;
+        }
+        p {
+          background-color: rgba(0, 0, 0, 0.6);
+          font-size: 14px;
+          color:  #ffffff;
+          padding: 5px;
+          text-align: right;
+          line-height: 21px;
+        }
+      }
+    }
+   }
  }
 
 .thin_red_line {

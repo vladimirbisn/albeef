@@ -8,11 +8,17 @@
     .desr_module
       %h1 Название
       .profes
-        = @current_job.title
-      %h1 Основные требования
-      = @current_job.requirements
-      %h1 Обязанности
-      = @current_job.responsobilities
-      %h1 Условия
-      = @current_job.conditions.html_safe
-      -#%a.button.cf{:href => "/jobs/apply"} Заполнить анкету
+        %p
+          = @current_job.title.html_safe
+      %h1
+        Основные требования
+      %p
+        = @current_job.requirements.html_safe
+      %h1
+        Обязанности
+      %p
+        = @current_job.responsobilities.html_safe
+      %h1
+        Условия
+      %p
+        = @current_job.conditions.html_safe

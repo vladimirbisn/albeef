@@ -1,5 +1,10 @@
 .slider
   .sliderContent
-    - ['bulls.png', 'corn.png', 'plant.png', 'feed.png', 'trucks.png'].each do |value|
+    - @slider.each do |value|
       .item
-        %img.slider{:src => "assets/layout/slider/#{value}"}
+        %img.slider{:src => "#{value.img_url}"}
+        .text_module
+          %h1
+            = value.title.html_safe
+          %p
+            = value.description.html_safe

@@ -12,11 +12,12 @@
           = formatDate(@latest_news.date)
         .photo_text
           .left
-            = link_to( image_tag("/assets/news/db/#{@latest_news.pic_title}"), "/news/#{@latest_news.id}" )
+            = link_to( image_tag("#{@latest_news.pic_title}"), "/news/#{@latest_news.id}" )
           .right
             %a{:href =>"/news/#{@latest_news.id}"}
               = @latest_news.header
-            = get_first_n_symbols(@latest_news.body, 415).html_safe
+            %p
+              = get_first_n_symbols(@latest_news.body, 415).html_safe
           = link_to( "Подробнее", "/news/#{@latest_news.id}", {:class => "more cf"})
     .news_list_block
       %ul

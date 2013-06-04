@@ -289,7 +289,6 @@
 .grey_gradient_block {
   box-shadow: 0px 2px 4px black;
   background: -moz-linear-gradient(top, #f8f6f5 0%, #d7d2ce 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#d7d2ce));
   background: -webkit-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
   background: -o-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
   background: -ms-linear-gradient(top, #f8f6f5 0%,#d7d2ce 100%);
@@ -300,7 +299,15 @@
 
 
 .dark_red_gradient {
-  @include linear_gradient(#c51410, #772626);
+  background: #c51410;
+  background: -moz-linear-gradient(top, #c51410 0%, 772626 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c51410), color-stop(100%, 772626));
+  background: -webkit-linear-gradient(top, #c51410 0%, 772626 100%);
+  background: -o-linear-gradient(top, #c51410 0%, 772626 100%);
+  background: -ms-linear-gradient(top, #c51410 0%, 772626 100%);
+  background: linear-gradient(top, #c51410 0%, 772626 100%);
+  -pie-background: linear-gradient(top, #c51410 0%, 772626 100%);
+  behavior: url(/assets/modules/PIE.htc);
   box-shadow: 0px 2px 4px black;
   border-radius: 0 0 7px 7px;
   position:relative;

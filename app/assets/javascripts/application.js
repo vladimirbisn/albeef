@@ -15,7 +15,6 @@
 //= require jquery.browser
 //= require mobilyslider
 //= require styx
-//= require jquery.browser
 //= require selectivizr-min
 //= require jquery.ui.core
 //= require jquery.ui.widget
@@ -23,10 +22,16 @@
 //= require raphael-min
 //= require jquery.fancybox
 //= require jquery.fancybox.pack
-//= require_tree .
+//= require_tree ./front
+//= require about
+//= require contacts
+//= require jobs
+//= require news
+//= require production
+//= require welcome
 
 $(document).ready(function() {
-    /*get rid of rambler counter*/
+    /*hack, which get rid of rambler counter*/
     $("a img[alt='Rambler\'s Top100']").parent().attr("style", "position:absolute;top:-10000px; opacity:0.1;")
     var date = new Date()
     $(".copyrights .year").html(date.getFullYear())

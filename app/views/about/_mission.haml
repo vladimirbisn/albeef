@@ -14,12 +14,7 @@
 
   .two_blocks
     .video_block
-      %object{:height => "255", :width => "415"}
-        %param{:name => "movie", :value => "http://www.youtube.com/v/wUtMDuJBl3c?version=3"}
-          %param{:name => "allowFullScreen", :value => "true"}
-            %param{:name => "allowscriptaccess", :value => "always"}
-              %embed{:allowfullscreen => "true", :allowscriptaccess => "always", :height => "255", :src => "http://www.youtube.com/v/wUtMDuJBl3c?version=3", :type => "application/x-shockwave-flash", :width => "415"}/
-
+      %iframe{:allowfullscreen => "true", :frameborder => "0", :height => "255", :src => @active_video[0].video_url, :width => "415"}
     .middle_full_block
       %h1 АГРОХОЛДИНГ ЗАО "ЗЕРОС"
       .border_red

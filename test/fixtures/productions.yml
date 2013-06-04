@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  part_title: 
+  dish_title: 
+  top_description: 
+  ingredients: 
+  preparation: 
+  part_img_url: 
+  dish_img_url: MyString
+
+two:
+  part_title: 
+  dish_title: 
+  top_description: 
+  ingredients: 
+  preparation: 
+  part_img_url: 
+  dish_img_url: MyString

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 class AddDataToJob < ActiveRecord::Migration
   def change
-    common_conditions = '<p>Соблюдение ТК РФ;</p><p>доставка служебным транспортом;</p><p>льготное питание;</p><p>работа в крупной развивающейся компании.</p>'
+    common_conditions = 'Соблюдение ТК РФ;<br>доставка служебным транспортом;<br>льготное питание;<br>работа в крупной развивающейся компании.<br>'
     Job.create(:title => "Инженер КИПиА", :requirements => "-", :responsobilities => "-", :conditions => common_conditions)
     Job.create(:title => "Электромонтер по ремонту и обследованию оборудования", :requirements => "-", :responsobilities => "-", :conditions => common_conditions)
     Job.create(:title => "Грузчик", :requirements => "-", :responsobilities => "-", :conditions => common_conditions)

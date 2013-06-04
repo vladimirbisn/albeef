@@ -6,10 +6,10 @@ class @Popup
     @popupCloseButton = $(@options.popupCloseButton)
     @hide()
 
-  init: (id)->
+  init: (data)->
     documentDimention = @getDocumentDimention()
     @darkLayer.attr("style", "width:" + documentDimention.width+"px;"+"height:" + documentDimention.height+"px;")
-    @renderPopup(id)
+    @renderPopup(data)
     @show()
 
     @popupCloseButton.on "click",() =>
@@ -18,8 +18,7 @@ class @Popup
     @popup.find(".dark_layer").on "click",() =>
       @hide()
 
-  renderPopup:(id) ->
-    obj  = PopupData.getPartById(id)
+  renderPopup:(obj) ->
     Helpers.insertCurrentPartFields(obj, @popup)
 
   getDocumentDimention: ->

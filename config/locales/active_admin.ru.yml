@@ -4,6 +4,7 @@ ru:
       long: "%d-%m-%Y"
   active_admin:
     News: 'Новости'
+    powered_by: "Powered by <a href='http://www.activeadmin.info'>Active Admin</a>"
     dashboard: 'Главная'
     dashboard_welcome:
       welcome: "Добро пожаловать в Active Admin. Это стандартная страница управления сайтом."
@@ -109,6 +110,7 @@ ru:
     failure:
       admin_user:
         not_found_in_database: 'Неправильный Email или пароль'
+      already_authenticated: 'Вход уже осуществлен'
     sessions:
       admin_user:
         signed_in: "Вы успешно вошли"

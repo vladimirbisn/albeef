@@ -4,27 +4,40 @@
    float:none;
    .sliderContent {
      .item {
-      .text_module {
+      .text_module, .dark_block {
         font-family: Arial,sans-serif;
         position: absolute;
         right: 26px;
         top: 28px;
+        h1, p {
+          color:  #000000;
+          position: relative;
+          background-color: #000000;
+          opacity: 0.6;
+          filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+          z-index: 100;
+        }
         h1 {
-          background-color: rgba(0, 0, 0, 0.6);
-          color: #FFFFFF;
           font-size: 22px;
           padding: 10px;
           text-transform: uppercase;
         }
         p {
-          background-color: rgba(0, 0, 0, 0.6);
           font-size: 14px;
-          color:  #ffffff;
           padding: 5px;
           text-align: right;
           line-height: 21px;
         }
       }
+       .dark_block {
+         h1, p {
+           color:  #ffffff;
+           z-index: 1000;
+           background-color: transparent;
+           opacity: 1;
+           filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+         }
+       }
     }
    }
  }

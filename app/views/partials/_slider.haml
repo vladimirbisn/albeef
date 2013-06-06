@@ -3,6 +3,11 @@
     - @slider.each do |value|
       .item
         %img.slider{:src => "#{value.img_url}"}
+        .dark_block
+          %h1
+            = value.title.html_safe
+          %p
+            = value.description.html_safe
         .text_module
           %h1
             = value.title.html_safe

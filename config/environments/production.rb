@@ -56,6 +56,9 @@ Albeef::Application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)
+  config.assets.precompile += %w[active_admin.css active_admin.js]
+  config.assets.precompile += [/^a-z0-9+(css|js)$/]
+  config.assets.compile = true
   config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners

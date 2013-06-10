@@ -6,6 +6,7 @@ ActiveAdmin.register Job do
     column 'Основные требования', :requirements
     column 'Обязанности',:responsobilities
     column 'Условия', :conditions
+    column 'Активный', :is_active
     default_actions
   end
 
@@ -15,6 +16,7 @@ ActiveAdmin.register Job do
       f.input :requirements, label: 'Основные требования', as: :html_editor
       f.input :responsobilities, label: 'Обязанности', as: :html_editor
       f.input :conditions, label: 'Условия', as: :html_editor
+      f.input :is_active, label: 'Активный', :as => :boolean
     end
     f.actions
   end

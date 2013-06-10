@@ -115,4 +115,12 @@ ru:
     sessions:
       admin_user:
         signed_in: "Вы успешно вошли"
+  activerecord:
+    errors:
+      models:
+        admin_user:
+          attributes:
+            password:
+              confirmationtranslation: 'Пароли не совпадают.'
+              too_short: 'Данный пароль слишком короткий.'
 

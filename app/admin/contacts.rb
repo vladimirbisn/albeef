@@ -15,7 +15,7 @@ ActiveAdmin.register Contact do
       f.input :address, label: 'Адрес'
       f.input :phone, label: 'Телефон'
       f.input :fax, label: 'Факс'
-      f.input :email, label: 'Emails'
+      f.input :emails, label: 'Emails'
     end
     f.actions
   end

@@ -9,7 +9,6 @@ ActiveAdmin.register About do
 
     default_actions
   end
-
   form do |f|
     f.inputs "Детально" do
       f.input :name, label: 'Заголовок'
